@@ -34,7 +34,7 @@ const schedule = [
 export default function PutnamPage() {
   return (
     <>
-      <section className="relative isolate overflow-hidden border-b border-tulane-warm-gray bg-tulane-navy text-white">
+      <section className="relative isolate overflow-hidden border-b border-tulane-warm-gray bg-tulane-green text-white">
         <div
           aria-hidden
           className="absolute inset-0 opacity-25"

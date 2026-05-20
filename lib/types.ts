@@ -14,6 +14,7 @@ export interface ClubEvent {
   location: string;
   description: string;
   rsvpUrl: string;
+  tentative?: boolean;
 }
 
 export type ResourceCategory =

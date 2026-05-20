@@ -26,11 +26,11 @@ export function Hero() {
       {/* Tint + readability overlay */}
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-br from-tulane-navy/85 via-tulane-navy/65 to-tulane-green/55"
+        className="absolute inset-0 bg-gradient-to-br from-tulane-charcoal/85 via-tulane-charcoal/65 to-tulane-green/55"
       />
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-t from-tulane-navy/60 via-transparent to-transparent"
+        className="absolute inset-0 bg-gradient-to-t from-tulane-charcoal/60 via-transparent to-transparent"
       />
 
       {/* Subtle math pattern */}

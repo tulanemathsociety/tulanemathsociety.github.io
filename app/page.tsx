@@ -7,7 +7,9 @@ import {
   Compass,
   ArrowRight,
   Lightbulb,
+  Clock,
 } from "lucide-react";
+import { LINKS } from "@/lib/links";
 import { Hero } from "@/components/Hero";
 import { SectionHeader } from "@/components/SectionHeader";
 import { EventCard } from "@/components/EventCard";
@@ -66,6 +68,30 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+
+      {/* Meeting time notice */}
+      <section className="border-b border-tulane-warm-gray bg-tulane-cream/60">
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+          <p className="flex items-start gap-3 text-sm text-tulane-charcoal">
+            <Clock
+              className="mt-0.5 h-4 w-4 shrink-0 text-tulane-green"
+              aria-hidden
+            />
+            <span>
+              <span className="font-semibold text-tulane-navy">Heads up:</span>{" "}
+              our weekly meeting time is still being decided for the semester.
+              Check the events page or email us and we&apos;ll let you know as
+              soon as it&apos;s set.
+            </span>
+          </p>
+          <a
+            href={LINKS.email}
+            className="self-start text-sm font-medium text-tulane-green hover:text-tulane-secondary-green sm:self-auto"
+          >
+            Email us →
+          </a>
+        </div>
+      </section>
 
       {/* What we do */}
       <section className="mx-auto max-w-6xl px-4 pb-12 pt-20 sm:px-6 lg:px-8">

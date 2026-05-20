@@ -188,7 +188,7 @@ const studyPlan = [
 export default function PutnamResourcesPage() {
   return (
     <>
-      <section className="relative isolate overflow-hidden border-b border-tulane-warm-gray bg-tulane-navy text-white">
+      <section className="relative isolate overflow-hidden border-b border-tulane-warm-gray bg-tulane-green text-white">
         <div
           aria-hidden
           className="absolute inset-0 opacity-25"
@@ -433,7 +433,7 @@ export default function PutnamResourcesPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-6 border border-tulane-warm-gray bg-tulane-navy p-8 text-white sm:p-10 md:grid-cols-3">
+        <div className="grid items-center gap-6 border border-tulane-warm-gray bg-tulane-green p-8 text-white sm:p-10 md:grid-cols-3">
           <div className="md:col-span-2">
             <h2 className="font-serif text-2xl sm:text-3xl">
               Come to a prep session

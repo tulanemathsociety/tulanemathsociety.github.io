@@ -397,7 +397,7 @@ export default function LatexGuidePage() {
           </FadeIn>
 
           <FadeIn delay={0.05} className="lg:col-span-3">
-            <pre className="overflow-x-auto border border-tulane-warm-gray bg-tulane-navy p-6 text-xs leading-relaxed text-tulane-pale-green sm:text-sm">
+            <pre className="overflow-x-auto border border-tulane-warm-gray bg-tulane-cream/40 p-6 font-mono text-xs leading-relaxed text-tulane-charcoal sm:text-sm">
               <code>{starterTemplate}</code>
             </pre>
           </FadeIn>
@@ -550,7 +550,7 @@ function PlatformCard({
       <ol className="mt-4 space-y-3 text-sm text-tulane-charcoal/85">
         {steps.map((step, i) => (
           <li key={step} className="flex items-start gap-3">
-            <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center bg-tulane-navy text-[11px] font-semibold text-white">
+            <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center bg-tulane-green text-[11px] font-semibold text-white">
               {i + 1}
             </span>
             <span>{step}</span>

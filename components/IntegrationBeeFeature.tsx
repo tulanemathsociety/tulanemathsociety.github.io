@@ -15,7 +15,7 @@ export function IntegrationBeeFeature({
 }: IntegrationBeeFeatureProps) {
   if (variant === "ribbon") {
     return (
-      <aside className="relative isolate overflow-hidden  border border-tulane-blue/30 bg-tulane-navy text-white">
+      <aside className="relative isolate overflow-hidden  border border-tulane-green/30 bg-tulane-green text-white">
         <BeeBackdrop />
         <div className="relative flex flex-col gap-4 px-6 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <div className="flex items-center gap-4">
@@ -53,7 +53,7 @@ export function IntegrationBeeFeature({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="relative isolate overflow-hidden  border border-tulane-green/20 bg-tulane-navy text-white shadow-lg"
+      className="relative isolate overflow-hidden  border border-tulane-green/20 bg-tulane-green text-white shadow-lg"
       aria-labelledby="integration-bee-heading"
     >
       <BeeBackdrop />
