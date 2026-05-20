@@ -10,10 +10,10 @@ interface EventCardProps {
 
 export function EventCard({ event }: EventCardProps) {
   return (
-    <article className="group flex h-full flex-col rounded-2xl border border-tulane-warm-gray bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-tulane-green/40 hover:shadow-md">
+    <article className="group flex h-full flex-col  border border-tulane-warm-gray bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-tulane-green/40 hover:shadow-md">
       <div className="flex items-start gap-4">
         <div
-          className="flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-xl bg-tulane-pale-green text-tulane-green"
+          className="flex h-16 w-16 shrink-0 flex-col items-center justify-center  bg-tulane-pale-green text-tulane-green"
           aria-hidden
         >
           <span className="text-[10px] font-semibold uppercase tracking-widest">

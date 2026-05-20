@@ -9,11 +9,11 @@ interface OfficerCardProps {
 
 export function OfficerCard({ officer }: OfficerCardProps) {
   return (
-    <article className="flex h-full flex-col rounded-2xl border border-tulane-warm-gray bg-white p-5 shadow-sm transition-all duration-200 hover:border-tulane-green/40 hover:shadow-md">
+    <article className="flex h-full flex-col  border border-tulane-warm-gray bg-white p-5 shadow-sm transition-all duration-200 hover:border-tulane-green/40 hover:shadow-md">
       <div className="flex items-center gap-4">
         <div
           aria-hidden
-          className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-tulane-green font-serif text-lg text-white"
+          className="flex h-14 w-14 shrink-0 items-center justify-center  bg-tulane-green font-serif text-lg text-white"
         >
           {officer.initials}
         </div>

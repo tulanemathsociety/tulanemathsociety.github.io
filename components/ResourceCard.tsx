@@ -17,7 +17,7 @@ export function ResourceCard({ resource }: ResourceCardProps) {
       target={isExternal ? "_blank" : undefined}
       rel={isExternal ? "noopener noreferrer" : undefined}
       aria-disabled={isPlaceholder || undefined}
-      className="group flex h-full flex-col rounded-2xl border border-tulane-warm-gray bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-tulane-green/40 hover:shadow-md"
+      className="group flex h-full flex-col  border border-tulane-warm-gray bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-tulane-green/40 hover:shadow-md"
     >
       <div className="flex items-center justify-between">
         <Badge tone="cream">{resource.category}</Badge>

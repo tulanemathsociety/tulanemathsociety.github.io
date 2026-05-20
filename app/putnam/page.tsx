@@ -61,12 +61,11 @@ export default function PutnamPage() {
               Start here
             </Button>
             <Button
-              href={LINKS.mailingList}
+              href={LINKS.email}
               variant="outline"
-              external
               className="border-white/50 text-white hover:bg-white/10"
             >
-              Join the prep mailing list
+              Email the prep coordinator
             </Button>
           </div>
         </div>
@@ -99,7 +98,7 @@ export default function PutnamPage() {
           </FadeIn>
 
           <FadeIn delay={0.05}>
-            <div className="rounded-2xl border border-tulane-warm-gray bg-tulane-pale-green/50 p-6">
+            <div className=" border border-tulane-warm-gray bg-tulane-pale-green/50 p-6">
               <h3 className="font-serif text-xl text-tulane-navy">
                 Quick facts
               </h3>
@@ -155,8 +154,8 @@ export default function PutnamPage() {
               },
             ].map((s, i) => (
               <FadeIn key={s.title} delay={i * 0.05}>
-                <div className="h-full rounded-2xl border border-tulane-warm-gray bg-white p-6">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-tulane-pale-green text-tulane-green">
+                <div className="h-full  border border-tulane-warm-gray bg-white p-6">
+                  <div className="flex h-11 w-11 items-center justify-center  bg-tulane-pale-green text-tulane-green">
                     <s.icon className="h-5 w-5" aria-hidden />
                   </div>
                   <h3 className="mt-4 font-serif text-xl text-tulane-navy">
@@ -184,9 +183,9 @@ export default function PutnamPage() {
               {schedule.map((s) => (
                 <li
                   key={s.week}
-                  className="flex items-start gap-4 rounded-xl border border-tulane-warm-gray bg-white p-4"
+                  className="flex items-start gap-4  border border-tulane-warm-gray bg-white p-4"
                 >
-                  <span className="inline-flex h-9 min-w-[3.5rem] items-center justify-center rounded-full bg-tulane-pale-green px-2 text-xs font-semibold uppercase tracking-wide text-tulane-green">
+                  <span className="inline-flex h-9 min-w-[3.5rem] items-center justify-center  bg-tulane-pale-green px-2 text-xs font-semibold uppercase tracking-wide text-tulane-green">
                     {s.week}
                   </span>
                   <span className="pt-1.5 text-tulane-charcoal">{s.topic}</span>
@@ -197,7 +196,7 @@ export default function PutnamPage() {
 
           <div className="space-y-6">
             <FadeIn>
-              <div className="rounded-2xl border border-tulane-green/30 bg-tulane-pale-green/60 p-6">
+              <div className=" border border-tulane-green/30 bg-tulane-pale-green/60 p-6">
                 <div className="flex items-center gap-2 text-tulane-green">
                   <Lightbulb className="h-5 w-5" aria-hidden />
                   <p className="text-xs font-semibold uppercase tracking-[0.18em]">
@@ -216,7 +215,7 @@ export default function PutnamPage() {
             </FadeIn>
 
             <FadeIn delay={0.05}>
-              <div className="rounded-2xl border border-tulane-warm-gray bg-white p-6">
+              <div className=" border border-tulane-warm-gray bg-white p-6">
                 <div className="flex items-center gap-2 text-tulane-blue">
                   <Archive className="h-5 w-5" aria-hidden />
                   <p className="text-xs font-semibold uppercase tracking-[0.18em]">
@@ -235,7 +234,7 @@ export default function PutnamPage() {
             </FadeIn>
 
             <FadeIn delay={0.1}>
-              <div className="rounded-2xl border border-tulane-warm-gray bg-white p-6">
+              <div className=" border border-tulane-warm-gray bg-white p-6">
                 <div className="flex items-center gap-2 text-tulane-blue">
                   <CalendarDays className="h-5 w-5" aria-hidden />
                   <p className="text-xs font-semibold uppercase tracking-[0.18em]">

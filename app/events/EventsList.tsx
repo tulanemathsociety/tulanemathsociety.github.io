@@ -41,7 +41,7 @@ export function EventsList({ events }: EventsListProps) {
               aria-selected={active}
               onClick={() => setFilter(cat)}
               className={cn(
-                "rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors",
+                " border px-3.5 py-1.5 text-sm font-medium transition-colors",
                 active
                   ? "border-tulane-green bg-tulane-green text-white"
                   : "border-tulane-warm-gray bg-white text-tulane-charcoal hover:border-tulane-green/40 hover:text-tulane-navy",
@@ -54,7 +54,7 @@ export function EventsList({ events }: EventsListProps) {
       </div>
 
       {filtered.length === 0 ? (
-        <p className="mt-10 rounded-2xl border border-dashed border-tulane-warm-gray bg-tulane-cream/30 p-8 text-center text-tulane-charcoal/70">
+        <p className="mt-10  border border-dashed border-tulane-warm-gray bg-tulane-cream/30 p-8 text-center text-tulane-charcoal/70">
           No events in this category yet. Check back soon, or{" "}
           <a
             href="mailto:mathclub@tulane.edu"

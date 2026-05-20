@@ -31,7 +31,7 @@ export function Navbar() {
     <header className="sticky top-0 z-40 border-b border-tulane-warm-gray/70 bg-white/85 backdrop-blur">
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:rounded-full focus:bg-tulane-navy focus:px-4 focus:py-2 focus:text-sm focus:text-white"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus: focus:bg-tulane-navy focus:px-4 focus:py-2 focus:text-sm focus:text-white"
       >
         Skip to content
       </a>
@@ -41,7 +41,7 @@ export function Navbar() {
       >
         <Link
           href="/"
-          className="rounded focus:outline-none"
+          className=" focus:outline-none"
           aria-label="Tulane Math Club home"
         >
           <Wordmark />
@@ -58,7 +58,7 @@ export function Navbar() {
                 <Link
                   href={item.href}
                   className={cn(
-                    "rounded-full px-3 py-2 text-sm font-medium transition-colors",
+                    " px-3 py-2 text-sm font-medium transition-colors",
                     active
                       ? "bg-tulane-pale-green text-tulane-green"
                       : "text-tulane-charcoal hover:bg-tulane-warm-gray/60 hover:text-tulane-navy",
@@ -73,15 +73,15 @@ export function Navbar() {
         </ul>
 
         <div className="hidden md:block">
-          <Button href={LINKS.mailingList} size="sm" external>
-            Join Mailing List
+          <Button href={LINKS.email} size="sm">
+            Email us
           </Button>
         </div>
 
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full text-tulane-navy hover:bg-tulane-warm-gray md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center  text-tulane-navy hover:bg-tulane-warm-gray md:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -107,7 +107,7 @@ export function Navbar() {
                   <Link
                     href={item.href}
                     className={cn(
-                      "block rounded-lg px-3 py-2 text-base font-medium",
+                      "block  px-3 py-2 text-base font-medium",
                       active
                         ? "bg-tulane-pale-green text-tulane-green"
                         : "text-tulane-charcoal hover:bg-tulane-warm-gray/60",
@@ -120,8 +120,8 @@ export function Navbar() {
               );
             })}
             <li className="pt-2">
-              <Button href={LINKS.mailingList} className="w-full" external>
-                Join Mailing List
+              <Button href={LINKS.email} className="w-full">
+                Email us
               </Button>
             </li>
           </ul>

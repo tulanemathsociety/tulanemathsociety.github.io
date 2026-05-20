@@ -80,9 +80,9 @@ export default function HomePage() {
               as="li"
               key={item.title}
               delay={i * 0.05}
-              className="rounded-2xl border border-tulane-warm-gray bg-white p-6 transition-colors hover:border-tulane-green/40"
+              className=" border border-tulane-warm-gray bg-white p-6 transition-colors hover:border-tulane-green/40"
             >
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-tulane-pale-green text-tulane-green">
+              <div className="flex h-11 w-11 items-center justify-center  bg-tulane-pale-green text-tulane-green">
                 <item.icon className="h-5 w-5" aria-hidden />
               </div>
               <h3 className="mt-4 font-serif text-xl text-tulane-navy">
@@ -128,14 +128,14 @@ export default function HomePage() {
       {/* Weekly puzzle teaser */}
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
         <FadeIn>
-          <div className="relative isolate overflow-hidden rounded-3xl border border-tulane-warm-gray bg-white shadow-sm">
+          <div className="relative isolate overflow-hidden  border border-tulane-warm-gray bg-white shadow-sm">
             <div
               aria-hidden
               className="absolute inset-y-0 right-0 hidden w-1/2 bg-gradient-to-br from-tulane-pale-green/50 via-white to-white md:block"
             />
             <div className="relative grid gap-8 px-6 py-10 sm:px-10 sm:py-12 md:grid-cols-12">
               <div className="md:col-span-7">
-                <p className="inline-flex items-center gap-2 rounded-full border border-tulane-green/30 bg-tulane-pale-green/60 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-tulane-green">
+                <p className="inline-flex items-center gap-2  border border-tulane-green/30 bg-tulane-pale-green/60 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-tulane-green">
                   <Lightbulb className="h-3.5 w-3.5" aria-hidden />
                   Puzzle of the week · #{currentPuzzle.week}
                 </p>
@@ -168,7 +168,7 @@ export default function HomePage() {
 
       {/* No formal process */}
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-10 rounded-3xl border border-tulane-warm-gray bg-white p-8 sm:p-12 md:grid-cols-2">
+        <div className="grid items-center gap-10  border border-tulane-warm-gray bg-white p-8 sm:p-12 md:grid-cols-2">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-tulane-blue">
               How to join
@@ -199,11 +199,11 @@ export default function HomePage() {
             ].map((item) => (
               <li
                 key={item}
-                className="flex items-start gap-3 rounded-xl bg-tulane-pale-green/60 px-4 py-3 text-tulane-navy"
+                className="flex items-start gap-3  bg-tulane-pale-green/60 px-4 py-3 text-tulane-navy"
               >
                 <span
                   aria-hidden
-                  className="mt-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-tulane-green"
+                  className="mt-1 inline-block h-1.5 w-1.5 shrink-0  bg-tulane-green"
                 />
                 {item}
               </li>

@@ -50,7 +50,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-white backdrop-blur"
+            className="inline-flex items-center gap-2  border border-white/30 bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-white backdrop-blur"
           >
             <Sparkles className="h-3.5 w-3.5" aria-hidden />
             Undergraduate community
@@ -82,8 +82,8 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.15 }}
             className="mt-8 flex flex-wrap gap-3"
           >
-            <Button href={LINKS.mailingList} external>
-              Join the Mailing List
+            <Button href={LINKS.email}>
+              Email us
               <ArrowRight className="h-4 w-4" aria-hidden />
             </Button>
             <Button

@@ -1,11 +1,11 @@
 import * as React from "react";
-import { Mail, MessageCircle, Instagram } from "lucide-react";
+import { Mail } from "lucide-react";
 import { Button } from "./Button";
 import { LINKS } from "@/lib/links";
 
 export function CTASection() {
   return (
-    <section className="relative isolate overflow-hidden rounded-3xl border border-tulane-green/15 bg-tulane-green text-white">
+    <section className="relative isolate overflow-hidden border border-tulane-green/15 bg-tulane-green text-white">
       <div
         aria-hidden
         className="absolute inset-0 opacity-20"
@@ -23,37 +23,18 @@ export function CTASection() {
             Join us — no formal process, just show up.
           </h2>
           <p className="mt-4 max-w-xl text-white/85">
-            Get a short email each week with what we&apos;re up to. Or drop into
-            our Discord, follow us on Instagram, and come to the next meeting.
+            Email us with a question, a puzzle, or just to say hi — or come
+            to the next meeting. That&apos;s all there is to it.
           </p>
         </div>
         <div className="flex flex-col gap-3 md:col-span-5 md:items-end md:justify-center">
           <Button
-            href={LINKS.mailingList}
+            href={LINKS.email}
             variant="secondary"
-            external
             className="w-full sm:w-auto"
           >
             <Mail className="h-4 w-4" aria-hidden />
-            Mailing list
-          </Button>
-          <Button
-            href={LINKS.discord}
-            variant="secondary"
-            external
-            className="w-full sm:w-auto"
-          >
-            <MessageCircle className="h-4 w-4" aria-hidden />
-            Discord
-          </Button>
-          <Button
-            href={LINKS.instagram}
-            variant="secondary"
-            external
-            className="w-full sm:w-auto"
-          >
-            <Instagram className="h-4 w-4" aria-hidden />
-            Instagram
+            {LINKS.emailAddress}
           </Button>
         </div>
       </div>

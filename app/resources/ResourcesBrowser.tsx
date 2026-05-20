@@ -47,7 +47,7 @@ export function ResourcesBrowser({ resources }: { resources: Resource[] }) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search resources…"
-            className="h-11 w-full rounded-full border border-tulane-warm-gray bg-white pl-10 pr-4 text-sm shadow-sm placeholder:text-tulane-charcoal/40 focus:border-tulane-green focus:outline-none"
+            className="h-11 w-full  border border-tulane-warm-gray bg-white pl-10 pr-4 text-sm shadow-sm placeholder:text-tulane-charcoal/40 focus:border-tulane-green focus:outline-none"
           />
         </label>
       </div>
@@ -67,7 +67,7 @@ export function ResourcesBrowser({ resources }: { resources: Resource[] }) {
               aria-selected={active}
               onClick={() => setFilter(cat)}
               className={cn(
-                "rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors",
+                " border px-3.5 py-1.5 text-sm font-medium transition-colors",
                 active
                   ? "border-tulane-green bg-tulane-green text-white"
                   : "border-tulane-warm-gray bg-white text-tulane-charcoal hover:border-tulane-green/40 hover:text-tulane-navy",
@@ -80,7 +80,7 @@ export function ResourcesBrowser({ resources }: { resources: Resource[] }) {
       </div>
 
       {filtered.length === 0 ? (
-        <p className="mt-10 rounded-2xl border border-dashed border-tulane-warm-gray bg-tulane-cream/30 p-8 text-center text-tulane-charcoal/70">
+        <p className="mt-10  border border-dashed border-tulane-warm-gray bg-tulane-cream/30 p-8 text-center text-tulane-charcoal/70">
           Nothing matches that yet. Try a different search or filter.
         </p>
       ) : (

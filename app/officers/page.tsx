@@ -54,7 +54,7 @@ export default function OfficersPage() {
           </div>
         )}
 
-        <div className="mt-16 grid items-center gap-6 rounded-3xl border border-tulane-warm-gray bg-tulane-cream/40 p-8 sm:p-10 md:grid-cols-3">
+        <div className="mt-16 grid items-center gap-6  border border-tulane-warm-gray bg-tulane-cream/40 p-8 sm:p-10 md:grid-cols-3">
           <div className="md:col-span-2">
             <h2 className="font-serif text-2xl text-tulane-navy sm:text-3xl">
               Want to help run an event?
@@ -66,7 +66,7 @@ export default function OfficersPage() {
             </p>
           </div>
           <div className="flex flex-wrap gap-3 md:justify-end">
-            <Button href={LINKS.mailingList} external>
+            <Button href={LINKS.email}>
               Email us
             </Button>
             <Button href="/about" variant="outline">

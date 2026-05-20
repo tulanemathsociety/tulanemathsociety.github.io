@@ -15,13 +15,13 @@ export function IntegrationBeeFeature({
 }: IntegrationBeeFeatureProps) {
   if (variant === "ribbon") {
     return (
-      <aside className="relative isolate overflow-hidden rounded-2xl border border-tulane-blue/30 bg-tulane-navy text-white">
+      <aside className="relative isolate overflow-hidden  border border-tulane-blue/30 bg-tulane-navy text-white">
         <BeeBackdrop />
         <div className="relative flex flex-col gap-4 px-6 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <div className="flex items-center gap-4">
             <div
               aria-hidden
-              className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-tulane-sky/15 font-serif text-3xl text-tulane-sky"
+              className="flex h-12 w-12 shrink-0 items-center justify-center  bg-tulane-sky/15 font-serif text-3xl text-tulane-sky"
             >
               ∫
             </div>
@@ -35,10 +35,9 @@ export function IntegrationBeeFeature({
             </div>
           </div>
           <Button
-            href={LINKS.mailingList}
+            href={LINKS.email}
             variant="secondary"
             size="sm"
-            external
           >
             Sign up to compete
             <ArrowRight className="h-4 w-4" aria-hidden />
@@ -54,14 +53,14 @@ export function IntegrationBeeFeature({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="relative isolate overflow-hidden rounded-3xl border border-tulane-green/20 bg-tulane-navy text-white shadow-lg"
+      className="relative isolate overflow-hidden  border border-tulane-green/20 bg-tulane-navy text-white shadow-lg"
       aria-labelledby="integration-bee-heading"
     >
       <BeeBackdrop />
 
       <div className="relative grid gap-10 px-6 py-12 sm:px-10 sm:py-16 md:grid-cols-12 md:gap-12">
         <div className="md:col-span-7">
-          <p className="inline-flex items-center gap-2 rounded-full border border-tulane-sky/40 bg-tulane-sky/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-tulane-sky">
+          <p className="inline-flex items-center gap-2  border border-tulane-sky/40 bg-tulane-sky/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-tulane-sky">
             <Sparkles className="h-3.5 w-3.5" aria-hidden />
             Featured event · Tentative
           </p>
@@ -102,14 +101,13 @@ export function IntegrationBeeFeature({
           </dl>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <Button href={LINKS.mailingList} variant="secondary" external>
+            <Button href={LINKS.email} variant="secondary">
               <Trophy className="h-4 w-4" aria-hidden />
               I want to compete
             </Button>
             <Button
-              href={LINKS.mailingList}
+              href={LINKS.email}
               variant="outline"
-              external
               className="border-white/40 text-white hover:bg-white/10"
             >
               <CalendarDays className="h-4 w-4" aria-hidden />

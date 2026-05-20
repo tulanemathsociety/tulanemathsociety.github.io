@@ -1,11 +1,5 @@
 import type { Metadata } from "next";
-import {
-  Mail,
-  MessageCircle,
-  Instagram,
-  ExternalLink,
-  CalendarDays,
-} from "lucide-react";
+import { Mail, ExternalLink, CalendarDays } from "lucide-react";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Button } from "@/components/Button";
 import { MathPatternBackground } from "@/components/MathPatternBackground";
@@ -30,26 +24,10 @@ const joinOptions = [
   },
   {
     icon: Mail,
-    title: "Mailing list",
-    body: "Get a short weekly email about upcoming meetings and events.",
-    cta: "Email to subscribe",
-    href: LINKS.mailingList,
-    external: true,
-  },
-  {
-    icon: MessageCircle,
-    title: "Discord",
-    body: "Casual chat between meetings — problems, memes, study buddies.",
-    cta: "Join Discord",
-    href: LINKS.discord,
-    external: true,
-  },
-  {
-    icon: Instagram,
-    title: "Instagram",
-    body: "Event reminders, recaps, and the occasional terrible math joke.",
-    cta: "Follow",
-    href: LINKS.instagram,
+    title: "Email us",
+    body: "Questions, puzzle solutions, or just saying hi — drop us a line at tulanemathsociety@gmail.com.",
+    cta: "Open mail",
+    href: LINKS.email,
     external: true,
   },
   {
@@ -105,7 +83,7 @@ export default function AboutPage() {
           </FadeIn>
 
           <FadeIn delay={0.05}>
-            <div className="rounded-2xl border border-tulane-warm-gray bg-tulane-pale-green/50 p-6 sm:p-8">
+            <div className=" border border-tulane-warm-gray bg-tulane-pale-green/50 p-6 sm:p-8">
               <h2 className="font-serif text-2xl text-tulane-navy">
                 We&apos;re especially glad to see…
               </h2>
@@ -121,7 +99,7 @@ export default function AboutPage() {
                   <li key={line} className="flex items-start gap-3">
                     <span
                       aria-hidden
-                      className="mt-2 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-tulane-green"
+                      className="mt-2 inline-block h-1.5 w-1.5 shrink-0  bg-tulane-green"
                     />
                     <span>{line}</span>
                   </li>
@@ -136,14 +114,14 @@ export default function AboutPage() {
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
           <SectionHeader
             eyebrow="Join"
-            title="Five easy ways to be a member"
+            title="Three easy ways to be a member"
             description="Pick whichever you like — they all work. Officially: just show up to a meeting and you're in."
           />
           <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {joinOptions.map((opt, i) => (
               <FadeIn as="li" key={opt.title} delay={i * 0.05}>
-                <div className="flex h-full flex-col rounded-2xl border border-tulane-warm-gray bg-white p-6">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-tulane-pale-green text-tulane-green">
+                <div className="flex h-full flex-col  border border-tulane-warm-gray bg-white p-6">
+                  <div className="flex h-11 w-11 items-center justify-center  bg-tulane-pale-green text-tulane-green">
                     <opt.icon className="h-5 w-5" aria-hidden />
                   </div>
                   <h3 className="mt-4 font-serif text-xl text-tulane-navy">
@@ -175,7 +153,7 @@ export default function AboutPage() {
           title="Frequently asked questions"
           description="Short answers. If yours isn't here, email any officer."
         />
-        <dl className="mt-10 divide-y divide-tulane-warm-gray rounded-2xl border border-tulane-warm-gray bg-white">
+        <dl className="mt-10 divide-y divide-tulane-warm-gray  border border-tulane-warm-gray bg-white">
           {faqs.map((item) => (
             <div key={item.id} className="p-6 sm:p-8">
               <dt className="font-serif text-lg text-tulane-navy">

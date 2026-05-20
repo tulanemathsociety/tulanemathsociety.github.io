@@ -13,7 +13,7 @@ export const events: ClubEvent[] = [
     location: "Gibson Hall 310",
     description:
       "Bring a snack, a notebook, and a friend. We work through fun problems in small groups — no prep required and no wrong answers.",
-    rsvpUrl: LINKS.mailingList,
+    rsvpUrl: LINKS.wavesync,
   },
   {
     id: "putnam-prep-session",
@@ -24,7 +24,7 @@ export const events: ClubEvent[] = [
     location: "Stanley Thomas 316",
     description:
       "Casual workshop on a Putnam-style topic each week. Beginners are welcome — we walk through technique together.",
-    rsvpUrl: LINKS.mailingList,
+    rsvpUrl: LINKS.wavesync,
   },
   {
     id: "faculty-lightning-talks",
@@ -35,7 +35,7 @@ export const events: ClubEvent[] = [
     location: "Boggs Center 105",
     description:
       "Three Tulane math professors share a favorite idea in 15 minutes each. Pizza after, questions encouraged.",
-    rsvpUrl: LINKS.mailingList,
+    rsvpUrl: LINKS.wavesync,
   },
   {
     id: "student-faculty-lunch",
@@ -46,7 +46,7 @@ export const events: ClubEvent[] = [
     location: "LBC Race Courtyard",
     description:
       "An informal lunch with faculty from across pure and applied math. Bring a question, or just come eat with us.",
-    rsvpUrl: LINKS.mailingList,
+    rsvpUrl: LINKS.wavesync,
   },
   {
     id: "math-game-night",
@@ -57,7 +57,7 @@ export const events: ClubEvent[] = [
     location: "LBC Qatar Ballroom",
     description:
       "Set, SET-the-card-game, Hex, Nim, Tak — and our infamous tournament of dice probability puzzles.",
-    rsvpUrl: LINKS.mailingList,
+    rsvpUrl: LINKS.wavesync,
   },
   {
     id: "latex-workshop",
@@ -68,7 +68,7 @@ export const events: ClubEvent[] = [
     location: "Gibson Hall 310",
     description:
       "A friendly intro to LaTeX for problem sets, theses, and homework. We use Overleaf — bring a laptop.",
-    rsvpUrl: LINKS.mailingList,
+    rsvpUrl: LINKS.wavesync,
   },
   {
     id: "reu-grad-panel",
@@ -79,7 +79,7 @@ export const events: ClubEvent[] = [
     location: "Stanley Thomas 316",
     description:
       "Current Tulane students and recent alumni share how they applied to REUs and graduate programs in math, stats, and CS.",
-    rsvpUrl: LINKS.mailingList,
+    rsvpUrl: LINKS.wavesync,
   },
   {
     id: "modeling-team-mixer",
@@ -90,7 +90,7 @@ export const events: ClubEvent[] = [
     location: "Gibson Hall 310",
     description:
       "Looking for a teammate for COMAP / MCM? Meet the modeling crew, see past problems, and team up.",
-    rsvpUrl: LINKS.mailingList,
+    rsvpUrl: LINKS.wavesync,
   },
   {
     id: "integration-bee",
@@ -101,6 +101,6 @@ export const events: ClubEvent[] = [
     location: "TBA",
     description:
       "A bracket-style speed integration tournament — Calc II–ready, spectator-friendly, prizes on the line. Tentatively planned for this semester; email us if you'd want to compete or help organize.",
-    rsvpUrl: LINKS.mailingList,
+    rsvpUrl: LINKS.wavesync,
   },
 ];
