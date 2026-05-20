@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 const schedule = [
-  { week: "Week 1", topic: "Welcome session — Putnam, demystified" },
+  { week: "Week 1", topic: "Welcome session: Putnam, demystified" },
   { week: "Week 2", topic: "Inequalities & clever substitutions" },
   { week: "Week 3", topic: "Combinatorics & counting tricks" },
   { week: "Week 4", topic: "Number theory: GCDs, mods, and Bezout" },
@@ -48,12 +48,12 @@ export default function PutnamPage() {
             Putnam & Competitions
           </p>
           <h1 className="mt-3 max-w-3xl font-serif text-4xl leading-tight sm:text-5xl">
-            Competition math, treated as a puzzle — not a test.
+            Competition math, treated as a puzzle, not a test.
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-white/85">
             Tulane Math Club&apos;s Putnam prep is open to everyone, regardless
             of background. We work through problems together, take it slow, and
-            celebrate clever ideas — including the wrong ones.
+            celebrate clever ideas, including the wrong ones.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href="#start-here" variant="secondary">
@@ -84,7 +84,7 @@ export default function PutnamPage() {
                 The William Lowell Putnam Mathematical Competition is an annual
                 six-hour exam taken by undergraduates across the United States
                 and Canada. Twelve short problems, no calculators, lots of
-                cleverness — and a long, weird tradition of being humbling for
+                cleverness, and a long, weird tradition of being humbling for
                 everyone, including future Fields medalists.
               </p>
               <p>
@@ -117,7 +117,7 @@ export default function PutnamPage() {
                 </li>
                 <li>
                   <span className="font-semibold text-tulane-navy">Cost:</span>{" "}
-                  Free — Tulane covers it
+                  Free; Tulane covers it
                 </li>
               </ul>
             </div>
@@ -140,7 +140,7 @@ export default function PutnamPage() {
               {
                 icon: BookOpen,
                 title: "Read one problem",
-                body: "Pick any Putnam A1 from the past ten years. A1s are the friendliest. Try it for 20 minutes — no Googling.",
+                body: "Pick any Putnam A1 from the past ten years. A1s are the friendliest. Try it for 20 minutes, no Googling.",
               },
               {
                 icon: Lightbulb,
@@ -150,7 +150,7 @@ export default function PutnamPage() {
               {
                 icon: Users,
                 title: "Come to a session",
-                body: "Bring what you wrote. We'll work the problem together — and you'll already have something to contribute.",
+                body: "Bring what you wrote. We'll work the problem together, and you'll already have something to contribute.",
               },
             ].map((s, i) => (
               <FadeIn key={s.title} delay={i * 0.05}>
@@ -209,7 +209,7 @@ export default function PutnamPage() {
                 </p>
                 <p className="mt-3 text-sm text-tulane-charcoal/75">
                   Try it. Sketch a couple of small cases. Bring whatever you
-                  find to the next prep session — even if it&apos;s a dead end.
+                  find to the next prep session, even if it&apos;s a dead end.
                 </p>
               </div>
             </FadeIn>

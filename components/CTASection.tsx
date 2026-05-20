@@ -20,10 +20,10 @@ export function CTASection() {
             Stay in touch
           </p>
           <h2 className="mt-2 font-serif text-3xl leading-tight sm:text-4xl">
-            Join us — no formal process, just show up.
+            Join us. No formal process, just show up.
           </h2>
           <p className="mt-4 max-w-xl text-white/85">
-            Email us with a question, a puzzle, or just to say hi — or come
+            Email us with a question, a puzzle, or just to say hi, or come
             to the next meeting. That&apos;s all there is to it.
           </p>
         </div>

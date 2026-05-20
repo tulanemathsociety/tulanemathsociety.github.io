@@ -11,7 +11,7 @@ export default function NotFound() {
           This page is undefined.
         </h1>
         <p className="mt-4 max-w-xl text-tulane-charcoal/80">
-          The page you&apos;re looking for isn&apos;t here — probably a typo, or
+          The page you&apos;re looking for isn&apos;t here. Probably a typo, or
           a link from somewhere old. Try one of these instead.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">

@@ -25,7 +25,7 @@ export default function OfficersPage() {
           <SectionHeader
             eyebrow="The team"
             title="Officers & advisor"
-            description="The students who keep the club running, and the faculty advisor who helps us along. Email any of us — we like getting emails."
+            description="The students who keep the club running, and the faculty advisor who helps us along. Email any of us; we like getting emails."
           />
         </div>
       </section>
@@ -62,7 +62,7 @@ export default function OfficersPage() {
             <p className="mt-3 text-tulane-charcoal/85">
               You don&apos;t have to be an officer to lead a problem-solving
               session, suggest a talk, or co-host a social with another club.
-              Tell us what you have in mind — small ideas are welcome.
+              Tell us what you have in mind. Small ideas are welcome.
             </p>
           </div>
           <div className="flex flex-wrap gap-3 md:justify-end">

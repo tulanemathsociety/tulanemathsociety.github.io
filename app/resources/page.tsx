@@ -19,7 +19,7 @@ export default function ResourcesPage() {
           <SectionHeader
             eyebrow="For Tulane math students"
             title="Resources"
-            description="Things we keep recommending — course planning, proof writing, LaTeX, REUs, grad school, and more. Curated by students, updated as we go."
+            description="Things we keep recommending: course planning, proof writing, LaTeX, REUs, grad school, and more. Curated by students, updated as we go."
           />
         </div>
       </section>

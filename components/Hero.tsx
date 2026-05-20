@@ -73,7 +73,7 @@ export function Hero() {
             className="mt-5 max-w-xl text-lg leading-relaxed text-white/90 sm:text-xl"
           >
             Puzzles, proofs, Putnam prep, talks, and community for anyone
-            curious about math — no major or prior contest experience required.
+            curious about math. No major or prior contest experience required.
           </motion.p>
 
           <motion.div

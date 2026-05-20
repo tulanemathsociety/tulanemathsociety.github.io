@@ -49,7 +49,7 @@ const whatWeDo = [
     icon: Briefcase,
     title: "Career & grad school panels",
     description:
-      "REUs, graduate programs, and what alumni actually do — quant, data, software, research, teaching.",
+      "REUs, graduate programs, and what alumni actually do: quant, data, software, research, teaching.",
   },
   {
     icon: Compass,
@@ -72,7 +72,7 @@ export default function HomePage() {
         <SectionHeader
           eyebrow="What we do"
           title="A welcoming math community at Tulane"
-          description="Anyone curious about math is welcome — math majors, CS majors, physics, econ, biomedical, philosophy, undecided. Come for whichever of these sounds fun."
+          description="Anyone curious about math is welcome: math majors, CS majors, physics, econ, biomedical, philosophy, undecided. Come for whichever of these sounds fun."
         />
         <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {whatWeDo.map((item, i) => (
@@ -108,7 +108,7 @@ export default function HomePage() {
             <SectionHeader
               eyebrow="Coming up"
               title="Upcoming events"
-              description="A few things on the calendar. Drop in to any of them — no RSVP required, though it helps us plan snacks."
+              description="A few things on the calendar. Drop in to any of them. No RSVP required, though it helps us plan snacks."
             />
             <Button href="/events" variant="outline" size="sm">
               View all events
@@ -174,13 +174,12 @@ export default function HomePage() {
               How to join
             </p>
             <h2 className="mt-2 font-serif text-3xl leading-tight text-tulane-navy sm:text-4xl">
-              No formal process to join — just show up.
+              No formal process to join. Just show up.
             </h2>
             <p className="mt-4 max-w-xl leading-relaxed text-tulane-charcoal/85">
               There&apos;s no application, no dues, no test. Come to any
               meeting that sounds interesting, bring a friend, and you&apos;re
-              a member. If you want a heads-up about events, hop on our
-              mailing list.
+              a member. Email us if you want a heads-up about upcoming events.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button href="/about">What to expect</Button>

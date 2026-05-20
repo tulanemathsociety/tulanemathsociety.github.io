@@ -10,7 +10,7 @@ import { LINKS } from "@/lib/links";
 export const metadata: Metadata = {
   title: "About & Join",
   description:
-    "About Tulane Math Club — our mission, who we welcome, how to join, and answers to common questions.",
+    "About Tulane Math Club: our mission, who we welcome, how to join, and answers to common questions.",
 };
 
 const joinOptions = [
@@ -25,7 +25,7 @@ const joinOptions = [
   {
     icon: Mail,
     title: "Email us",
-    body: "Questions, puzzle solutions, or just saying hi — drop us a line at tulanemathsociety@gmail.com.",
+    body: "Questions, puzzle solutions, or just saying hi. Drop us a line at tulanemathsociety@gmail.com.",
     cta: "Open mail",
     href: LINKS.email,
     external: true,
@@ -70,7 +70,7 @@ export default function AboutPage() {
                 We believe math is more fun in good company. Our goal is to
                 give Tulane undergrads a low-pressure place to think about
                 interesting problems, meet people who like the same things they
-                do, and find their way into deeper mathematics — whether that
+                do, and find their way into deeper mathematics, whether that
                 means competitions, research, grad school, or just a happier
                 Tuesday night.
               </p>
@@ -115,7 +115,7 @@ export default function AboutPage() {
           <SectionHeader
             eyebrow="Join"
             title="Three easy ways to be a member"
-            description="Pick whichever you like — they all work. Officially: just show up to a meeting and you're in."
+            description="Pick whichever you like; they all work. Officially: just show up to a meeting and you're in."
           />
           <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {joinOptions.map((opt, i) => (

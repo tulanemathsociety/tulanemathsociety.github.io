@@ -12,7 +12,7 @@ export const events: ClubEvent[] = [
     time: "6:00 – 7:30 PM",
     location: "Gibson Hall 310",
     description:
-      "Bring a snack, a notebook, and a friend. We work through fun problems in small groups — no prep required and no wrong answers.",
+      "Bring a snack, a notebook, and a friend. We work through fun problems in small groups. No prep required and no wrong answers.",
     rsvpUrl: LINKS.wavesync,
   },
   {
@@ -23,7 +23,7 @@ export const events: ClubEvent[] = [
     time: "2:00 – 4:00 PM",
     location: "Stanley Thomas 316",
     description:
-      "Casual workshop on a Putnam-style topic each week. Beginners are welcome — we walk through technique together.",
+      "Casual workshop on a Putnam-style topic each week. Beginners are welcome; we walk through technique together.",
     rsvpUrl: LINKS.wavesync,
   },
   {
@@ -56,7 +56,7 @@ export const events: ClubEvent[] = [
     time: "7:00 – 9:00 PM",
     location: "LBC Qatar Ballroom",
     description:
-      "Set, SET-the-card-game, Hex, Nim, Tak — and our infamous tournament of dice probability puzzles.",
+      "Set, SET-the-card-game, Hex, Nim, Tak, plus our infamous tournament of dice probability puzzles.",
     rsvpUrl: LINKS.wavesync,
   },
   {
@@ -67,7 +67,7 @@ export const events: ClubEvent[] = [
     time: "3:00 – 4:30 PM",
     location: "Gibson Hall 310",
     description:
-      "A friendly intro to LaTeX for problem sets, theses, and homework. We use Overleaf — bring a laptop.",
+      "A friendly intro to LaTeX for problem sets, theses, and homework. We cover both Overleaf and a local install (TeXShop / MiKTeX / TeX Live). Bring a laptop.",
     rsvpUrl: LINKS.wavesync,
   },
   {
@@ -100,7 +100,7 @@ export const events: ClubEvent[] = [
     time: "6:00 – 8:00 PM",
     location: "TBA",
     description:
-      "A bracket-style speed integration tournament — Calc II–ready, spectator-friendly, prizes on the line. Tentatively planned for this semester; email us if you'd want to compete or help organize.",
+      "A bracket-style speed integration tournament. Calc II ready, spectator-friendly, prizes on the line. Tentatively planned for this semester; email us if you'd want to compete or help organize.",
     rsvpUrl: LINKS.wavesync,
   },
 ];

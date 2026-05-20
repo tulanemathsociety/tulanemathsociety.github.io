@@ -22,7 +22,7 @@ export default function EventsPage() {
           <SectionHeader
             eyebrow="Calendar"
             title="Upcoming events"
-            description="Weekly problem-solving, Putnam prep, talks, and the occasional game night. Filter by category — or scroll the full list."
+            description="Weekly problem-solving, Putnam prep, talks, and the occasional game night. Filter by category, or scroll the full list."
           />
           <Button href={LINKS.calendar} variant="outline" external>
             <CalendarPlus className="h-4 w-4" aria-hidden />

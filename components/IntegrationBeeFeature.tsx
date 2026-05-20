@@ -30,7 +30,7 @@ export function IntegrationBeeFeature({
                 Coming this fall
               </p>
               <p className="mt-1 font-serif text-xl leading-tight">
-                Integration Bee — speed-integration tournament
+                Integration Bee: speed-integration tournament
               </p>
             </div>
           </div>
@@ -73,7 +73,7 @@ export function IntegrationBeeFeature({
           </h2>
 
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/85 sm:text-lg">
-            A bracket-style speed-integration tournament — Calc II–ready,
+            A bracket-style speed-integration tournament, Calc II ready,
             spectator-friendly, and built around the kind of clever
             substitutions that make integrals fun. We&apos;re planning this for
             the fall; tell us you&apos;re in and we&apos;ll make it happen.

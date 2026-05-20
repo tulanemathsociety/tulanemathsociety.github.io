@@ -11,7 +11,7 @@ import { LINKS } from "@/lib/links";
 export const metadata: Metadata = {
   title: "Weekly Puzzle",
   description:
-    "A new mathematical puzzle every week from the Tulane Math Club. Send in your solution — past puzzles and solutions live in the archive.",
+    "A new mathematical puzzle every week from the Tulane Math Club. Send in your solution; past puzzles and solutions live in the archive.",
 };
 
 export default function PuzzlePage() {
@@ -60,7 +60,7 @@ export default function PuzzlePage() {
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-tulane-charcoal/85">
                 A new puzzle appears here each Tuesday. They&apos;re chosen to
-                be approachable with pen and paper — no special background
+                be approachable with pen and paper, no special background
                 required. Try the hint first; the solution gets posted with
                 the next week&apos;s puzzle.
               </p>
@@ -77,7 +77,7 @@ export default function PuzzlePage() {
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-tulane-charcoal/85">
                 Email us your solution before the deadline, or bring it to
-                the next meeting. We love elegant solutions — but partial
+                the next meeting. We love elegant solutions, but partial
                 credit is real, and so is &quot;here&apos;s where I got
                 stuck.&quot;
               </p>

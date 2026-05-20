@@ -90,7 +90,7 @@ export function PuzzleCard({ puzzle, variant = "archive" }: PuzzleCardProps) {
             Email a solution
           </Button>
           <span className="text-sm text-tulane-charcoal/65">
-            Or bring it to the next meeting — both count.
+            Or bring it to the next meeting. Both count.
           </span>
         </div>
       )}

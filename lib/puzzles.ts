@@ -52,7 +52,7 @@ export const puzzles: Puzzle[] = [
     difficulty: "Standard",
     statement:
       "Find all positive integers n such that n + 1 divides n² + 1.",
-    hint: "Polynomial long division — what is n² + 1 modulo n + 1?",
+    hint: "Polynomial long division. What is n² + 1 modulo n + 1?",
     solution:
       "Since n² + 1 = (n + 1)(n − 1) + 2, we have (n² + 1) mod (n + 1) = 2. So (n + 1) | (n² + 1) iff (n + 1) | 2, which gives n + 1 ∈ {1, 2}, hence n = 1.",
     solvers: ["Devi T.", "Jonas K."],

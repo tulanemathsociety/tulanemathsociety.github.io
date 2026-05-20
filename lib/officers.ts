@@ -40,7 +40,7 @@ export const officers: Officer[] = [
     name: "Officer Name",
     role: "Putnam Coordinator",
     email: "mathclub@tulane.edu",
-    bio: "Sophomore, math. Runs weekly Putnam prep with a focus on beginners — no contest background needed.",
+    bio: "Sophomore, math. Runs weekly Putnam prep with a focus on beginners; no contest background needed.",
     initials: "MC",
   },
   {
