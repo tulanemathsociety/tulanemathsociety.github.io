@@ -59,6 +59,14 @@ export function Footer() {
               </li>
               <li>
                 <Link
+                  href="/puzzle"
+                  className="text-tulane-charcoal hover:text-tulane-green"
+                >
+                  Weekly Puzzle
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/putnam"
                   className="text-tulane-charcoal hover:text-tulane-green"
                 >

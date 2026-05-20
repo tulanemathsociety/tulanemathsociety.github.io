@@ -12,6 +12,7 @@ import { LINKS } from "@/lib/links";
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/events", label: "Events" },
+  { href: "/puzzle", label: "Puzzle" },
   { href: "/putnam", label: "Putnam" },
   { href: "/resources", label: "Resources" },
   { href: "/officers", label: "Officers" },

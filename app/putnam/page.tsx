@@ -11,6 +11,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { Button } from "@/components/Button";
 import { MathPatternBackground } from "@/components/MathPatternBackground";
 import { FadeIn } from "@/components/FadeIn";
+import { IntegrationBeeFeature } from "@/components/IntegrationBeeFeature";
 import { LINKS } from "@/lib/links";
 
 export const metadata: Metadata = {
@@ -69,6 +70,10 @@ export default function PutnamPage() {
             </Button>
           </div>
         </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pt-12 sm:px-6 lg:px-8">
+        <IntegrationBeeFeature variant="ribbon" />
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
