@@ -10,3 +10,7 @@ The official website of the Tulane Math Club.
 npm install
 npm run dev
 ```
+
+## License
+
+[MIT](./LICENSE) © Tulane Math Society
