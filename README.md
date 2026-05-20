@@ -94,16 +94,28 @@ tulane-charcoal          #343333
 
 Fonts: Helvetica Neue / Helvetica / Arial for sans, Georgia for serif headings.
 
-## Deploy to Vercel
+## Deploy
 
-The fastest path:
+### GitHub Pages (current setup)
 
-1. Push this repo to GitHub.
-2. Sign in to <https://vercel.com> and click **Add New → Project**.
-3. Import the GitHub repo. Defaults (`next build`, Node 18+) are correct.
-4. Click **Deploy**. Each push to `main` will auto-deploy.
+This repo deploys to <https://tulanemathsociety.github.io/> via GitHub Actions.
 
-No env vars are required. If you add any later (e.g., a real newsletter form), set them in **Vercel → Project → Settings → Environment Variables**.
+One-time setup:
+
+1. In the repo on GitHub, go to **Settings → Pages**.
+2. Under **Build and deployment → Source**, choose **GitHub Actions**.
+
+After that, every push to `main` triggers `.github/workflows/deploy.yml`, which runs `npm run build` and publishes the static `out/` directory to Pages.
+
+Implementation notes:
+
+- `next.config.mjs` sets `output: "export"` and `trailingSlash: true` so Next produces fully static HTML.
+- `public/.nojekyll` is included so GitHub Pages doesn't run Jekyll (which would mangle the `_next/` folder).
+- Because the repo is `tulanemathsociety.github.io`, the site serves from the root path — no `basePath` is needed. If you ever fork this into a project repo like `tulane-math-club`, add `basePath: "/tulane-math-club"` and `assetPrefix: "/tulane-math-club/"` to `next.config.mjs`.
+
+### Vercel (alternative)
+
+If you'd rather use Vercel: import the repo at <https://vercel.com>, accept defaults, deploy. You can leave the static-export config in place — Vercel handles both.
 
 ## Where to replace placeholders
 
