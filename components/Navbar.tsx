@@ -31,23 +31,23 @@ export function Navbar() {
     <header className="sticky top-0 z-40 border-b border-tulane-warm-gray/70 bg-white/85 backdrop-blur">
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus: focus:bg-tulane-navy focus:px-4 focus:py-2 focus:text-sm focus:text-white"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:bg-tulane-green focus:px-4 focus:py-2 focus:text-sm focus:text-white"
       >
         Skip to content
       </a>
       <nav
         aria-label="Primary"
-        className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8"
+        className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8"
       >
         <Link
           href="/"
-          className=" focus:outline-none"
+          className="min-w-0 shrink focus:outline-none"
           aria-label="Tulane Math Club home"
         >
           <Wordmark />
         </Link>
 
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden items-center gap-1 lg:flex">
           {navItems.map((item) => {
             const active =
               item.href === "/"
@@ -72,7 +72,7 @@ export function Navbar() {
           })}
         </ul>
 
-        <div className="hidden md:block">
+        <div className="hidden shrink-0 lg:block">
           <Button href={LINKS.email} size="sm">
             Email us
           </Button>
@@ -81,7 +81,7 @@ export function Navbar() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="inline-flex h-10 w-10 items-center justify-center  text-tulane-navy hover:bg-tulane-warm-gray md:hidden"
+          className="inline-flex h-10 w-10 shrink-0 items-center justify-center text-tulane-charcoal hover:bg-tulane-warm-gray lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -95,7 +95,7 @@ export function Navbar() {
       </nav>
 
       {open && (
-        <div id="mobile-menu" className="border-t border-tulane-warm-gray md:hidden">
+        <div id="mobile-menu" className="border-t border-tulane-warm-gray lg:hidden">
           <ul className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-4 sm:px-6">
             {navItems.map((item) => {
               const active =

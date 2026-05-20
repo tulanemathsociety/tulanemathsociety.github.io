@@ -396,8 +396,8 @@ export default function LatexGuidePage() {
             </p>
           </FadeIn>
 
-          <FadeIn delay={0.05} className="lg:col-span-3">
-            <pre className="overflow-x-auto border border-tulane-warm-gray bg-tulane-cream/40 p-6 font-mono text-xs leading-relaxed text-tulane-charcoal sm:text-sm">
+          <FadeIn delay={0.05} className="min-w-0 lg:col-span-3">
+            <pre className="max-w-full overflow-x-auto border border-tulane-warm-gray bg-tulane-cream/40 p-6 font-mono text-xs leading-relaxed text-tulane-charcoal sm:text-sm">
               <code>{starterTemplate}</code>
             </pre>
           </FadeIn>

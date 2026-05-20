@@ -84,10 +84,10 @@ export function Footer() {
               <li>
                 <a
                   href={LINKS.email}
-                  className="inline-flex items-center gap-2 text-tulane-charcoal hover:text-tulane-green"
+                  className="inline-flex items-start gap-2 break-all text-tulane-charcoal hover:text-tulane-green"
                 >
-                  <Mail className="h-4 w-4" aria-hidden />
-                  {LINKS.emailAddress}
+                  <Mail className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
+                  <span>{LINKS.emailAddress}</span>
                 </a>
               </li>
               <li>
