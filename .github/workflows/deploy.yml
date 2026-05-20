@@ -28,7 +28,10 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm ci
+        # Using `install` (not `ci`) because the lockfile is generated on
+        # macOS/Node 25 locally and may be missing Linux-only optional
+        # transitive deps that the Ubuntu/Node 20 runner needs.
+        run: npm install --no-audit --no-fund
 
       - name: Build static site
         run: npm run build
