@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --tulane-green: #255c4e;
+  --tulane-pale-green: #e7f2e0;
+  --tulane-olive: #9ba64a;
+  --tulane-secondary-green: #688c3e;
+  --tulane-cream: #f0ebdb;
+  --tulane-warm-gray: #edece8;
+  --tulane-sky: #6fc5e8;
+  --tulane-blue: #138094;
+  --tulane-navy: #001b3f;
+  --tulane-charcoal: #343333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--tulane-charcoal);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: rgba(37, 92, 78, 0.2);
+  color: var(--tulane-navy);
+}
+
+/* Focus ring used throughout for keyboard accessibility */
+:focus-visible {
+  outline: 2px solid var(--tulane-blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Reduced motion: disable our subtle animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
