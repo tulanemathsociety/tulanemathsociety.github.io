@@ -1,4 +1,5 @@
 import * as React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Instagram, MessageCircle, Mail, ExternalLink } from "lucide-react";
 import { Wordmark } from "./Wordmark";
@@ -18,10 +19,29 @@ export function Footer() {
               anyone who enjoys mathematical ideas, problem solving, and
               meeting other curious students.
             </p>
-            <p className="mt-4 max-w-md text-xs text-tulane-charcoal/60">
-              Unofficial student site. Not an official Tulane University
-              communication.
-            </p>
+            <a
+              href={LINKS.mathDept}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center gap-3 rounded-xl border border-tulane-warm-gray bg-white/70 px-3 py-2 transition-colors hover:border-tulane-green/40"
+              aria-label="Tulane University — Department of Mathematics"
+            >
+              <Image
+                src="/logos/tulane-shield-wordmark.svg"
+                alt="Tulane University"
+                width={132}
+                height={187}
+                className="h-10 w-auto"
+              />
+              <span className="flex flex-col text-left leading-tight">
+                <span className="text-xs uppercase tracking-[0.18em] text-tulane-charcoal/60">
+                  An undergraduate org at
+                </span>
+                <span className="text-sm font-semibold text-tulane-navy">
+                  Tulane University
+                </span>
+              </span>
+            </a>
           </div>
 
           <div>

@@ -1,13 +1,10 @@
 import * as React from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 /**
- * Tulane Math Club wordmark.
- *
- * NOTE: This is an unofficial text-based wordmark created for this site.
- * Official Tulane marks (shield, seal, "Angry Wave", athletics logos)
- * require approval from Tulane's licensing/brand offices and are NOT
- * used here. Replace this component if and when approved assets land.
+ * Navbar lockup: official Tulane horizontal wordmark + "Math Club" subtitle.
+ * Logo files live in /public/logos/.
  */
 export function Wordmark({
   className,
@@ -20,28 +17,27 @@ export function Wordmark({
     <span
       aria-label="Tulane Math Club"
       className={cn(
-        "inline-flex items-center gap-2 font-serif leading-none text-tulane-navy",
+        "inline-flex items-center gap-3 leading-none",
         className,
       )}
     >
+      <Image
+        src="/logos/tulane-wordmark.svg"
+        alt="Tulane University"
+        width={247}
+        height={84}
+        priority
+        className={cn(
+          "h-8 w-auto sm:h-9",
+          compact && "h-7 sm:h-8",
+        )}
+      />
       <span
         aria-hidden
-        className="flex h-9 w-9 items-center justify-center rounded-full bg-tulane-green text-base font-semibold text-white"
-      >
-        Σ
-      </span>
-      <span className="flex flex-col">
-        <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-tulane-green">
-          Tulane
-        </span>
-        <span
-          className={cn(
-            "font-serif text-lg text-tulane-navy",
-            compact ? "tracking-tight" : "tracking-wide",
-          )}
-        >
-          Math Club
-        </span>
+        className="hidden h-7 w-px bg-tulane-warm-gray sm:block"
+      />
+      <span className="hidden font-serif text-lg tracking-wide text-tulane-green sm:inline">
+        Math Club
       </span>
     </span>
   );

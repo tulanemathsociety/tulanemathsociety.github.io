@@ -2,7 +2,7 @@
 
 Production-ready website for the Tulane University Math Club. Built with Next.js 14 (App Router), TypeScript, Tailwind CSS, Framer Motion, and lucide-react.
 
-> **Brand note:** This site uses an unofficial text-based "Tulane Math Club" wordmark. Official Tulane marks (shield, seal, Angry Wave, athletics logos) are **not** included — those require approval from Tulane's licensing and brand offices. Once you have approved assets, replace `components/Wordmark.tsx` and add any logo files.
+> **Brand assets:** Official Tulane wordmark and shield SVGs live in `public/logos/`. They appear in the Navbar (horizontal wordmark) and Footer (shield + stacked wordmark). Use of these marks is per approval from Tulane Marketing & Communications. To swap in updated files, replace the SVGs in `public/logos/` — file paths in `components/Wordmark.tsx` and `components/Footer.tsx` stay the same.
 
 ## Run locally
 
