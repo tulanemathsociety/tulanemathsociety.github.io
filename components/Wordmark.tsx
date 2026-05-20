@@ -3,8 +3,8 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 /**
- * Navbar lockup: official Tulane horizontal wordmark + "Math Club" subtitle.
- * Logo files live in /public/logos/.
+ * Navbar lockup: Tulane Math Club shield mark + serif wordmark.
+ * The PNG mark lives in /public/logos/math-club-mark.png.
  */
 export function Wordmark({
   className,
@@ -22,22 +22,23 @@ export function Wordmark({
       )}
     >
       <Image
-        src="/logos/tulane-wordmark.svg"
-        alt="Tulane University"
-        width={247}
-        height={84}
+        src="/logos/math-club-mark.png"
+        alt=""
+        width={256}
+        height={256}
         priority
         className={cn(
-          "h-8 w-auto sm:h-9",
-          compact && "h-7 sm:h-8",
+          "h-10 w-10 sm:h-11 sm:w-11",
+          compact && "h-9 w-9 sm:h-10 sm:w-10",
         )}
       />
-      <span
-        aria-hidden
-        className="hidden h-7 w-px bg-tulane-warm-gray sm:block"
-      />
-      <span className="hidden font-serif text-lg tracking-wide text-tulane-green sm:inline">
-        Math Club
+      <span className="flex flex-col">
+        <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-tulane-green">
+          Tulane
+        </span>
+        <span className="font-serif text-lg tracking-wide text-tulane-navy">
+          Math Club
+        </span>
       </span>
     </span>
   );

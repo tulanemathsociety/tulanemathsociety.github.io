@@ -8,6 +8,7 @@ const SITE_DESC =
   "Undergraduate math community at Tulane University for puzzles, Putnam prep, talks, resources, and social events.";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://tulanemathsociety.github.io"),
   title: {
     default: SITE_NAME,
     template: `%s · ${SITE_NAME}`,

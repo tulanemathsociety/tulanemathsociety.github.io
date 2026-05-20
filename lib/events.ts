@@ -92,4 +92,15 @@ export const events: ClubEvent[] = [
       "Looking for a teammate for COMAP / MCM? Meet the modeling crew, see past problems, and team up.",
     rsvpUrl: LINKS.mailingList,
   },
+  {
+    id: "integration-bee",
+    title: "Integration Bee (tentative)",
+    category: "Social",
+    date: "2026-11-14",
+    time: "6:00 – 8:00 PM",
+    location: "TBA",
+    description:
+      "A bracket-style speed integration tournament — Calc II–ready, spectator-friendly, prizes on the line. Tentatively planned for this semester; email us if you'd want to compete or help organize.",
+    rsvpUrl: LINKS.mailingList,
+  },
 ];
