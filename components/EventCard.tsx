@@ -24,7 +24,14 @@ export function EventCard({ event }: EventCardProps) {
           </span>
         </div>
         <div className="min-w-0 flex-1">
-          <Badge tone={categoryTone(event.category)}>{event.category}</Badge>
+          <div className="flex flex-wrap items-center gap-2">
+            <Badge tone={categoryTone(event.category)}>{event.category}</Badge>
+            {event.tentative && (
+              <span className="inline-flex items-center border border-tulane-olive/50 bg-tulane-olive/10 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-tulane-olive">
+                Tentative
+              </span>
+            )}
+          </div>
           <h3 className="mt-2 font-serif text-xl leading-snug text-tulane-navy">
             {event.title}
           </h3>

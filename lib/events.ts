@@ -3,104 +3,116 @@ import { LINKS } from "./links";
 
 // Edit this file to add, remove, or update club events.
 // Dates are ISO YYYY-MM-DD; times use a friendly 12-hour string.
+// `tentative: true` shows a "Tentative" badge on the card.
+const TBD = "To be determined";
+
 export const events: ClubEvent[] = [
   {
     id: "weekly-problem-solving",
     title: "Weekly Problem Solving Night",
     category: "Problem Solving",
     date: "2026-09-08",
-    time: "6:00 – 7:30 PM",
-    location: "Gibson Hall 310",
+    time: TBD,
+    location: TBD,
     description:
       "Bring a snack, a notebook, and a friend. We work through fun problems in small groups. No prep required and no wrong answers.",
     rsvpUrl: LINKS.wavesync,
+    tentative: true,
   },
   {
     id: "putnam-prep-session",
     title: "Putnam Prep Session",
     category: "Putnam Prep",
     date: "2026-09-12",
-    time: "2:00 – 4:00 PM",
-    location: "Stanley Thomas 316",
+    time: TBD,
+    location: TBD,
     description:
       "Casual workshop on a Putnam-style topic each week. Beginners are welcome; we walk through technique together.",
     rsvpUrl: LINKS.wavesync,
+    tentative: true,
   },
   {
     id: "faculty-lightning-talks",
     title: "Faculty Lightning Talks",
     category: "Talk",
     date: "2026-09-19",
-    time: "5:00 – 6:30 PM",
-    location: "Boggs Center 105",
+    time: TBD,
+    location: TBD,
     description:
       "Three Tulane math professors share a favorite idea in 15 minutes each. Pizza after, questions encouraged.",
     rsvpUrl: LINKS.wavesync,
+    tentative: true,
   },
   {
     id: "student-faculty-lunch",
     title: "Student–Faculty Lunch",
     category: "Social",
     date: "2026-09-25",
-    time: "12:30 – 1:45 PM",
-    location: "LBC Race Courtyard",
+    time: TBD,
+    location: TBD,
     description:
       "An informal lunch with faculty from across pure and applied math. Bring a question, or just come eat with us.",
     rsvpUrl: LINKS.wavesync,
+    tentative: true,
   },
   {
     id: "math-game-night",
     title: "Math Game Night",
     category: "Social",
     date: "2026-10-03",
-    time: "7:00 – 9:00 PM",
-    location: "LBC Qatar Ballroom",
+    time: TBD,
+    location: TBD,
     description:
       "Set, SET-the-card-game, Hex, Nim, Tak, plus our infamous tournament of dice probability puzzles.",
     rsvpUrl: LINKS.wavesync,
+    tentative: true,
   },
   {
     id: "latex-workshop",
     title: "LaTeX Workshop",
     category: "Talk",
     date: "2026-10-10",
-    time: "3:00 – 4:30 PM",
-    location: "Gibson Hall 310",
+    time: TBD,
+    location: TBD,
     description:
       "A friendly intro to LaTeX for problem sets, theses, and homework. We cover both Overleaf and a local install (TeXShop / MiKTeX / TeX Live). Bring a laptop.",
     rsvpUrl: LINKS.wavesync,
+    tentative: true,
   },
   {
     id: "reu-grad-panel",
     title: "REU & Grad School Panel",
     category: "Career / Grad School",
     date: "2026-10-17",
-    time: "5:30 – 7:00 PM",
-    location: "Stanley Thomas 316",
+    time: TBD,
+    location: TBD,
     description:
       "Current Tulane students and recent alumni share how they applied to REUs and graduate programs in math, stats, and CS.",
     rsvpUrl: LINKS.wavesync,
+    tentative: true,
   },
   {
     id: "modeling-team-mixer",
     title: "Modeling Competition Team Mixer",
     category: "Career / Grad School",
     date: "2026-10-24",
-    time: "4:00 – 5:30 PM",
-    location: "Gibson Hall 310",
+    time: TBD,
+    location: TBD,
     description:
       "Looking for a teammate for COMAP / MCM? Meet the modeling crew, see past problems, and team up.",
     rsvpUrl: LINKS.wavesync,
+    tentative: true,
   },
   {
     id: "integration-bee",
-    title: "Integration Bee (tentative)",
+    title: "Integration Bee",
     category: "Social",
     date: "2026-11-14",
-    time: "6:00 – 8:00 PM",
-    location: "TBA",
+    time: TBD,
+    location: TBD,
     description:
-      "A bracket-style speed integration tournament. Calc II ready, spectator-friendly, prizes on the line. Tentatively planned for this semester; email us if you'd want to compete or help organize.",
+      "A bracket-style speed integration tournament. Calc II ready, spectator-friendly, prizes on the line. Email us if you'd want to compete or help organize.",
     rsvpUrl: LINKS.wavesync,
+    tentative: true,
   },
 ];
