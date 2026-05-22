@@ -1,6 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
-import { Mail, ExternalLink } from "lucide-react";
+import { Mail, ExternalLink, MessageCircle } from "lucide-react";
 import { Wordmark } from "./Wordmark";
 import { LINKS } from "@/lib/links";
 
@@ -88,6 +88,17 @@ export function Footer() {
                 >
                   <Mail className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
                   <span>{LINKS.emailAddress}</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href={LINKS.groupme}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-tulane-charcoal hover:text-tulane-green"
+                >
+                  <MessageCircle className="h-4 w-4" aria-hidden />
+                  GroupMe
                 </a>
               </li>
               <li>

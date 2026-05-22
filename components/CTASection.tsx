@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Mail } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 import { Button } from "./Button";
 import { LINKS } from "@/lib/links";
 
@@ -29,9 +29,18 @@ export function CTASection() {
         </div>
         <div className="flex flex-col gap-3 md:col-span-5 md:items-end md:justify-center">
           <Button
-            href={LINKS.email}
+            href={LINKS.groupme}
             variant="secondary"
             className="w-full sm:w-auto"
+            external
+          >
+            <MessageCircle className="h-4 w-4" aria-hidden />
+            Join the GroupMe
+          </Button>
+          <Button
+            href={LINKS.email}
+            variant="outline"
+            className="w-full border-white/60 text-white hover:bg-white/10 sm:w-auto"
           >
             <Mail className="h-4 w-4" aria-hidden />
             {LINKS.emailAddress}

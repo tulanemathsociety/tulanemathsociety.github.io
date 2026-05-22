@@ -4,5 +4,6 @@ export const LINKS = {
   mathDept: "https://sse.tulane.edu/math",
   email: "mailto:tulanemathsociety@gmail.com",
   emailAddress: "tulanemathsociety@gmail.com",
+  groupme: "https://groupme.com/join_group/96206392/6syQhgSf",
   calendar: "#",
 } as const;

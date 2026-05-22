@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, ExternalLink, CalendarDays } from "lucide-react";
+import { Mail, ExternalLink, CalendarDays, MessageCircle } from "lucide-react";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Button } from "@/components/Button";
 import { MathPatternBackground } from "@/components/MathPatternBackground";
@@ -14,6 +14,14 @@ export const metadata: Metadata = {
 };
 
 const joinOptions = [
+  {
+    icon: MessageCircle,
+    title: "Join the GroupMe",
+    body: "Where day-to-day announcements, puzzles, and meeting reminders happen.",
+    cta: "Open GroupMe",
+    href: LINKS.groupme,
+    external: true,
+  },
   {
     icon: ExternalLink,
     title: "Join WaveSync",
@@ -114,10 +122,10 @@ export default function AboutPage() {
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
           <SectionHeader
             eyebrow="Join"
-            title="Three easy ways to be a member"
+            title="A few easy ways to be a member"
             description="Pick whichever you like; they all work. Officially: just show up to a meeting and you're in."
           />
-          <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {joinOptions.map((opt, i) => (
               <FadeIn as="li" key={opt.title} delay={i * 0.05}>
                 <div className="flex h-full flex-col  border border-tulane-warm-gray bg-white p-6">

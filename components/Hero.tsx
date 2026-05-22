@@ -3,7 +3,7 @@
 import * as React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, CalendarDays, Sparkles } from "lucide-react";
+import { ArrowRight, CalendarDays, MessageCircle, Sparkles } from "lucide-react";
 import { Button } from "./Button";
 import { LINKS } from "@/lib/links";
 
@@ -82,8 +82,9 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.15 }}
             className="mt-8 flex flex-wrap gap-3"
           >
-            <Button href={LINKS.email}>
-              Email us
+            <Button href={LINKS.groupme} external>
+              <MessageCircle className="h-4 w-4" aria-hidden />
+              Join the GroupMe
               <ArrowRight className="h-4 w-4" aria-hidden />
             </Button>
             <Button
