@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { SectionHeader } from "@/components/SectionHeader";
 import { OfficerCard } from "@/components/OfficerCard";
-import { Button } from "@/components/Button";
 import { MathPatternBackground } from "@/components/MathPatternBackground";
 import { FadeIn } from "@/components/FadeIn";
 import { officers } from "@/lib/officers";
-import { LINKS } from "@/lib/links";
 
 export const metadata: Metadata = {
   title: "Officers",
@@ -53,27 +51,6 @@ export default function OfficersPage() {
             </ul>
           </div>
         )}
-
-        <div className="mt-16 grid items-center gap-6  border border-tulane-warm-gray bg-tulane-cream/40 p-8 sm:p-10 md:grid-cols-3">
-          <div className="md:col-span-2">
-            <h2 className="font-serif text-2xl text-tulane-navy sm:text-3xl">
-              Want to help run an event?
-            </h2>
-            <p className="mt-3 text-tulane-charcoal/85">
-              You don&apos;t have to be an officer to lead a problem-solving
-              session, suggest a talk, or co-host a social with another club.
-              Tell us what you have in mind. Small ideas are welcome.
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-3 md:justify-end">
-            <Button href={LINKS.email}>
-              Email us
-            </Button>
-            <Button href="/about" variant="outline">
-              About the club
-            </Button>
-          </div>
-        </div>
       </section>
     </>
   );
