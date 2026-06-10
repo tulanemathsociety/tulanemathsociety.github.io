@@ -3,7 +3,7 @@
 import * as React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, CalendarDays, MessageCircle, Sparkles } from "lucide-react";
+import { ArrowRight, MessageCircle, Sparkles } from "lucide-react";
 import { Button } from "./Button";
 import { LINKS } from "@/lib/links";
 
@@ -86,21 +86,6 @@ export function Hero() {
               <MessageCircle className="h-4 w-4" aria-hidden />
               Join the GroupMe
               <ArrowRight className="h-4 w-4" aria-hidden />
-            </Button>
-            <Button
-              href="/events"
-              variant="outline"
-              className="border-white/60 text-white hover:bg-white/10"
-            >
-              <CalendarDays className="h-4 w-4" aria-hidden />
-              See Upcoming Events
-            </Button>
-            <Button
-              href="/putnam"
-              variant="ghost"
-              className="text-white hover:bg-white/10"
-            >
-              Prepare for Putnam
             </Button>
           </motion.div>
 

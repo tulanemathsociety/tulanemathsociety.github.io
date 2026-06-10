@@ -27,14 +27,6 @@ export function Footer() {
             <ul className="mt-4 space-y-2 text-sm">
               <li>
                 <Link
-                  href="/events"
-                  className="text-tulane-charcoal hover:text-tulane-green"
-                >
-                  Events
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/puzzle"
                   className="text-tulane-charcoal hover:text-tulane-green"
                 >
@@ -63,14 +55,6 @@ export function Footer() {
                   className="text-tulane-charcoal hover:text-tulane-green"
                 >
                   Officers
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="text-tulane-charcoal hover:text-tulane-green"
-                >
-                  About / Join
                 </Link>
               </li>
             </ul>

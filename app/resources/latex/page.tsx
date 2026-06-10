@@ -465,8 +465,8 @@ export default function LatexGuidePage() {
           </div>
           <div className="flex flex-wrap gap-3 md:justify-end">
             <Button href={LINKS.email}>Email us</Button>
-            <Button href="/events" variant="outline">
-              See events
+            <Button href="/officers" variant="outline">
+              Meet the officers
             </Button>
           </div>
         </div>
