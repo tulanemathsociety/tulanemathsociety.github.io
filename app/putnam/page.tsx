@@ -7,7 +7,7 @@ import { LINKS } from "@/lib/links";
 export const metadata: Metadata = {
   title: "Putnam & Competitions",
   description:
-    "Simple information about Tulane Math Club's Putnam prep and competition interests.",
+    "Overview of Tulane Math Club programming related to the Putnam Competition and related contests.",
 };
 
 const helpfulLinks = [
@@ -33,11 +33,11 @@ export default function PutnamPage() {
             Putnam & Competitions
           </p>
           <h1 className="mt-3 font-serif text-4xl leading-tight text-tulane-navy sm:text-5xl">
-            Putnam, kept simple.
+            Putnam and mathematical competitions
           </h1>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-tulane-charcoal/85">
-            If you are curious about the Putnam, this is the place to start.
-            Our approach is beginner-friendly and collaborative.
+            Tulane Math Club provides an entry point for students interested in
+            the Putnam Competition and related mathematical competitions.
           </p>
         </div>
       </section>
@@ -50,13 +50,14 @@ export default function PutnamPage() {
             </h2>
             <div className="mt-4 space-y-4 leading-relaxed text-tulane-charcoal/85">
               <p>
-                The Putnam is a hard undergraduate math competition, but you do
-                not need prior contest experience to be interested in it.
+                The Putnam is a demanding undergraduate competition, but prior
+                contest experience is not required in order to participate in
+                club preparation.
               </p>
               <p>
-                When the club runs prep, it is usually a small group working
-                through problems together. The goal is to learn how these
-                problems feel, not to perform.
+                When preparation sessions are offered, they are typically
+                organized as small-group problem sessions with an emphasis on
+                technique, discussion, and steady progress.
               </p>
             </div>
 
@@ -65,11 +66,11 @@ export default function PutnamPage() {
             </h2>
             <ul className="mt-4 space-y-2 text-tulane-charcoal/85">
               <li>Open to any Tulane undergraduate.</li>
-              <li>Questions and partial attempts are welcome.</li>
-              <li>We keep the tone relaxed and beginner-friendly.</li>
+              <li>Questions and partial solutions are encouraged.</li>
+              <li>Preparation is structured to be accessible to new participants.</li>
               <li>
-                If there is interest in COMAP / MCM, we can help connect
-                students looking for teammates.
+                Students interested in COMAP / MCM can contact the club about
+                team formation.
               </li>
             </ul>
           </div>
@@ -79,8 +80,8 @@ export default function PutnamPage() {
               This semester
             </h2>
             <p className="mt-3 leading-relaxed text-tulane-charcoal/80">
-              We are keeping this page simple until meeting times and prep plans
-              are set. If you want updates, email us or join the GroupMe.
+              Meeting times and preparation plans for the semester will be
+              announced once they are finalized.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button href={LINKS.email}>Email us</Button>

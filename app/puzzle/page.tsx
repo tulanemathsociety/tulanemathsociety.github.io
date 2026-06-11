@@ -6,7 +6,7 @@ import { LINKS } from "@/lib/links";
 export const metadata: Metadata = {
   title: "Weekly Puzzle",
   description:
-    "Tulane Math Club's weekly puzzle page. The first puzzle has not been posted yet.",
+    "Weekly puzzle page for Tulane Math Club. The first puzzle has not yet been posted.",
 };
 
 export default function PuzzlePage() {
@@ -19,11 +19,11 @@ export default function PuzzlePage() {
             Weekly puzzle
           </p>
           <h1 className="mt-3 font-serif text-4xl leading-tight text-tulane-navy sm:text-5xl">
-            Nothing is posted yet.
+            No puzzle has been posted yet.
           </h1>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-tulane-charcoal/85">
-            We have not launched the weekly puzzle yet. When the first one is
-            ready, it will appear here.
+            The weekly puzzle series has not yet begun. The first problem will
+            be posted here once the series is launched.
           </p>
         </div>
       </section>
@@ -31,14 +31,14 @@ export default function PuzzlePage() {
       <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="border border-tulane-warm-gray bg-white p-6 sm:p-8">
           <h2 className="font-serif text-2xl text-tulane-navy">
-            Weekly puzzle coming soon
+            Weekly puzzle series
           </h2>
           <p className="mt-3 leading-relaxed text-tulane-charcoal/80">
-            Once the puzzle series starts, this page will hold the current
-            puzzle and later an archive of older ones.
+            This page will eventually contain the current puzzle together with
+            an archive of earlier problems and solutions.
           </p>
           <p className="mt-3 leading-relaxed text-tulane-charcoal/80">
-            For now, the best place for updates is the GroupMe or the club
+            For current updates, please use the GroupMe or contact the club by
             email.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">

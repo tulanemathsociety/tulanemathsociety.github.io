@@ -7,6 +7,7 @@ interface SectionHeaderProps {
   description?: string;
   align?: "left" | "center";
   className?: string;
+  titleAs?: "h1" | "h2";
 }
 
 export function SectionHeader({
@@ -15,7 +16,10 @@ export function SectionHeader({
   description,
   align = "left",
   className,
+  titleAs = "h2",
 }: SectionHeaderProps) {
+  const TitleTag = titleAs;
+
   return (
     <div
       className={cn(
@@ -29,9 +33,9 @@ export function SectionHeader({
           {eyebrow}
         </p>
       )}
-      <h2 className="font-serif text-3xl leading-tight text-tulane-navy sm:text-4xl">
+      <TitleTag className="font-serif text-3xl leading-tight text-tulane-navy sm:text-4xl">
         {title}
-      </h2>
+      </TitleTag>
       {description && (
         <p className="mt-4 text-base leading-relaxed text-tulane-charcoal/80 sm:text-lg">
           {description}

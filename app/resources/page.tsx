@@ -6,7 +6,7 @@ import { ResourcesBrowser } from "./ResourcesBrowser";
 export const metadata: Metadata = {
   title: "Resources",
   description:
-    "A simple list of Tulane Math Club resources and useful links.",
+    "Selected links and core textbooks for Tulane students interested in mathematics.",
 };
 
 export default function ResourcesPage() {
@@ -22,7 +22,7 @@ export default function ResourcesPage() {
             Resources
           </h1>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-tulane-charcoal/85">
-            A short list of guides and links we keep recommending.
+            Selected links and a short list of core textbooks for proof-based undergraduate mathematics.
           </p>
         </div>
       </section>

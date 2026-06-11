@@ -8,7 +8,7 @@ import { officers } from "@/lib/officers";
 export const metadata: Metadata = {
   title: "Officers",
   description:
-    "Meet the Tulane Math Club officers and faculty advisor. Get in touch about events, talks, or getting involved.",
+    "Current Tulane Math Club officers and faculty advisor, with contact information.",
 };
 
 export default function OfficersPage() {
@@ -23,7 +23,8 @@ export default function OfficersPage() {
           <SectionHeader
             eyebrow="The team"
             title="Officers & advisor"
-            description="The students who keep the club running, and the faculty advisor who helps us along. Email any of us; we like getting emails."
+            titleAs="h1"
+            description="Current club officers and faculty advisor. Contact any officer with questions about meetings or programming."
           />
         </div>
       </section>

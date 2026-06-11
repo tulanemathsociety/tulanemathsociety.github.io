@@ -13,44 +13,43 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { CTASection } from "@/components/CTASection";
 import { Button } from "@/components/Button";
 import { FadeIn } from "@/components/FadeIn";
-import { IntegrationBeeFeature } from "@/components/IntegrationBeeFeature";
 
 const whatWeDo = [
   {
     icon: Brain,
     title: "Weekly problem-solving nights",
     description:
-      "Small groups, a stack of fun problems, and a whiteboard. The best way to meet the rest of the club.",
+      "Weekly collaborative sessions centered on mathematical problem solving.",
   },
   {
     icon: Trophy,
     title: "Putnam preparation",
     description:
-      "Beginner-friendly weekly sessions. We treat the Putnam as a puzzle, not a gauntlet.",
+      "Regular preparation sessions for students interested in the Putnam Competition.",
   },
   {
     icon: Mic,
     title: "Undergraduate talks",
     description:
-      "Students and faculty share favorite ideas in 15–30 minute talks. Pizza and questions follow.",
+      "Short talks by students and faculty on mathematical topics of broad interest.",
   },
   {
     icon: PartyPopper,
     title: "Social events",
     description:
-      "Game nights, student–faculty lunches, and end-of-semester gatherings around the city.",
+      "Community events that bring together students, faculty, and prospective members.",
   },
   {
     icon: Briefcase,
     title: "Career & grad school panels",
     description:
-      "REUs, graduate programs, and what alumni actually do: quant, data, software, research, teaching.",
+      "Panels and advising related to research opportunities, graduate study, and careers.",
   },
   {
     icon: Compass,
     title: "Peer advising & resources",
     description:
-      "Course planning, LaTeX, proof writing, and a growing list of things-we-wish-we-knew-sooner.",
+      "Guidance on coursework, proof writing, LaTeX, and related academic resources.",
   },
 ];
 
@@ -68,9 +67,10 @@ export default function HomePage() {
               aria-hidden
             />
             <span>
-              <span className="font-semibold text-tulane-navy">Heads up:</span>{" "}
-              our weekly meeting time is still being decided for the semester.
-              Email us and we&apos;ll let you know as soon as it&apos;s set.
+              <span className="font-semibold text-tulane-navy">Notice:</span>{" "}
+              the regular meeting time for the semester has not yet been
+              finalized. Please email the club for the latest schedule
+              information.
             </span>
           </p>
           <a
@@ -86,8 +86,8 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-4 pb-12 pt-20 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="What we do"
-          title="A welcoming math community at Tulane"
-          description="Anyone curious about math is welcome: math majors, CS majors, physics, econ, biomedical, philosophy, undecided. Come for whichever of these sounds fun."
+          title="Mathematical programming for Tulane undergraduates"
+          description="The club offers regular academic and community programming for students interested in mathematics, including majors, non-majors, and students from related fields."
         />
         <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {whatWeDo.map((item, i) => (
@@ -111,11 +111,6 @@ export default function HomePage() {
         </ul>
       </section>
 
-      {/* Featured event spotlight */}
-      <section className="mx-auto max-w-6xl px-4 pb-20 pt-4 sm:px-6 lg:px-8">
-        <IntegrationBeeFeature variant="spotlight" />
-      </section>
-
       {/* Weekly puzzle teaser */}
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
         <FadeIn>
@@ -124,11 +119,11 @@ export default function HomePage() {
               Weekly puzzle
             </p>
             <h2 className="mt-2 font-serif text-3xl text-tulane-navy sm:text-4xl">
-              Coming soon
+              Launching soon
             </h2>
             <p className="mt-4 max-w-2xl leading-relaxed text-tulane-charcoal/85">
-              We have not posted the first weekly puzzle yet. When it is ready,
-              it will live on the puzzle page.
+              The weekly puzzle series has not yet begun. Future puzzles and
+              solutions will be published on the puzzle page.
             </p>
             <Button href="/puzzle" variant="outline" className="mt-6">
               Puzzle page

@@ -2,14 +2,12 @@ import Link from "next/link";
 import type { Resource, ResourceCategory } from "@/lib/types";
 
 const CATEGORIES: ResourceCategory[] = [
-  "Coursework",
-  "Proofs",
+  "Books",
   "LaTeX",
   "Putnam",
   "Research",
   "Grad School",
   "Careers",
-  "Books",
 ];
 
 export function ResourcesBrowser({ resources }: { resources: Resource[] }) {

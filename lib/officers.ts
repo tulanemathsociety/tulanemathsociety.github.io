@@ -8,7 +8,7 @@ export const officers: Officer[] = [
     name: "Eli Naig",
     role: "President",
     email: "enaig@tulane.edu",
-    bio: "Bio coming soon.",
+    bio: "Biography forthcoming.",
     initials: "EN",
   },
   {
@@ -16,7 +16,7 @@ export const officers: Officer[] = [
     name: "Arnold Daniel",
     role: "Vice President",
     email: "adaniel12@tulane.edu",
-    bio: "Bio coming soon.",
+    bio: "Biography forthcoming.",
     initials: "AD",
   },
   {
@@ -24,7 +24,7 @@ export const officers: Officer[] = [
     name: "Bryce Martin",
     role: "Treasurer",
     email: "bmartin13@tulane.edu",
-    bio: "Bio coming soon.",
+    bio: "Biography forthcoming.",
     initials: "BM",
   },
   {
@@ -32,7 +32,7 @@ export const officers: Officer[] = [
     name: "Finn Tierney",
     role: "Secretary",
     email: "ntierney1@tulane.edu",
-    bio: "Bio coming soon.",
+    bio: "Biography forthcoming.",
     initials: "FT",
   },
   {
@@ -40,7 +40,7 @@ export const officers: Officer[] = [
     name: "Victor H. Moll",
     role: "Faculty Advisor",
     email: "vhm@tulane.edu",
-    bio: "Bio coming soon.",
+    bio: "Biography forthcoming.",
     initials: "VM",
     isAdvisor: true,
   },

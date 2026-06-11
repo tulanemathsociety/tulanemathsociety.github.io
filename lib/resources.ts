@@ -1,48 +1,70 @@
 import type { Resource } from "./types";
-import { LINKS } from "./links";
 
 // Edit this file to add or update resources.
-// `href` can be an internal path (e.g. "/resources/latex") or an external URL.
+// `href` can be an internal path or an external URL.
 export const resources: Resource[] = [
   {
-    id: "latex-guide",
-    title: "Beginner's LaTeX Guide",
+    id: "how-to-prove-it",
+    title: "How to Prove It",
+    category: "Books",
+    description:
+      "Best first text for logic, sets, induction, and the structure of rigorous proofs.",
+    href: "https://www.google.com/search?tbo=p&tbm=bks&q=How+to+Prove+It+Daniel+Velleman",
+  },
+  {
+    id: "spivak-calculus",
+    title: "Calculus",
+    category: "Books",
+    description:
+      "Spivak's rigorous single-variable calculus text and a strong bridge into proof-based analysis.",
+    href: "https://www.google.com/search?tbo=p&tbm=bks&q=Michael+Spivak+Calculus",
+  },
+  {
+    id: "axler-linear-algebra",
+    title: "Linear Algebra Done Right",
+    category: "Books",
+    description:
+      "A standard honors linear algebra text and the book listed in MIT's undergraduate linear algebra readings.",
+    href: "https://ocw.mit.edu/courses/18-700-linear-algebra-fall-2013/pages/readings/",
+  },
+  {
+    id: "dummit-foote",
+    title: "Abstract Algebra",
+    category: "Books",
+    description:
+      "Dummit and Foote on groups, rings, fields, modules, and Galois theory. The main algebra recommendation.",
+    href: "https://www.wiley.com/en-us/Abstract+Algebra%2C+3rd+Edition-p-9780471433347",
+  },
+  {
+    id: "bartle-sherbert",
+    title: "Introduction to Real Analysis",
+    category: "Books",
+    description:
+      "Bartle and Sherbert on sequences, continuity, differentiation, integration, and the foundations of undergraduate analysis.",
+    href: "https://www.wiley.com/en-us/Introduction+to+Real+Analysis%2C+4th+Edition-p-9781118017098",
+  },
+  {
+    id: "overleaf",
+    title: "Overleaf",
     category: "LaTeX",
     description:
-      "Install TeXShop / MacTeX (Mac), MiKTeX (Windows), or TeX Live (Linux), pick an editor, and write your first problem set. Includes a starter template and an Overleaf vs. local comparison.",
-    href: "/resources/latex",
+      "Browser-based LaTeX editor with no local installation required.",
+    href: "https://www.overleaf.com/",
+  },
+  {
+    id: "texlive-install",
+    title: "TeX Live Quick Install",
+    category: "LaTeX",
+    description: "Official install guide for local TeX and LaTeX setup.",
+    href: "https://www.tug.org/texlive/quickinstall.html",
   },
   {
     id: "putnam-archive",
     title: "Putnam Study Resources",
     category: "Putnam",
     description:
-      "Books, problem archives (Kedlaya, AoPS, official MAA), topic-by-topic study advice, and a four-week starter plan. Built for first-time competitors.",
+      "Books, archives, topic guides, and a four-week introductory study plan for Putnam preparation.",
     href: "/resources/putnam",
-  },
-  {
-    id: "course-planning",
-    title: "Math Course Planning Guide",
-    category: "Coursework",
-    description:
-      "Tulane's math curriculum, proof-based vs. applied tracks, prereqs, and recommended sequences. Maintained by the Department of Mathematics.",
-    href: LINKS.mathDept,
-  },
-  {
-    id: "proof-writing",
-    title: "How to Prove It",
-    category: "Proofs",
-    description:
-      "Daniel Velleman's classic textbook. The standard first proof book at Tulane: logic, set theory, induction, and how to write the dreaded epsilon-delta proof clearly.",
-    href: "https://www.cambridge.org/core/books/how-to-prove-it/6D2965D6130A35D2C8D8CF457C75CE6B",
-  },
-  {
-    id: "proof-handouts",
-    title: "Tulane Proof-Writing Handouts",
-    category: "Proofs",
-    description:
-      "Short PDFs from Math 3050 and 3070 (Intro to Proof) on common proof structures, when to use induction vs. contradiction, and how to avoid the word \"clearly\".",
-    href: LINKS.mathDept,
   },
   {
     id: "reu-list",
@@ -50,46 +72,38 @@ export const resources: Resource[] = [
     category: "Research",
     description:
       "The official NSF Research Experiences for Undergraduates directory. Filter by math, statistics, or applied math. Most applications open in November and close in February.",
-    href: "https://www.nsf.gov/crssprgm/reu/list_result.jsp?unitid=5044",
+    href: "https://www.nsf.gov/funding/initiatives/reu/search?f%5b0%5d=reu_research_area:25741",
   },
   {
     id: "mathprograms",
     title: "MathPrograms.org",
     category: "Research",
     description:
-      "Where most math REUs and summer schools post their applications. Make an account once; reuse it for every application.",
+      "Application portal used by many REUs and summer programs in mathematics.",
     href: "https://www.mathprograms.org/",
+  },
+  {
+    id: "clifford-library",
+    title: "Alfred H. Clifford Mathematics Research Library",
+    category: "Research",
+    description:
+      "Once it reopens, this is an excellent place to study and access mathematics journals, dissertations, and related literature.",
+    href: "https://library.tulane.edu/places/Alfred-H-Clifford-Mathematics-Research-Library",
   },
   {
     id: "grad-school",
     title: "Mathematics GRE & Grad School",
     category: "Grad School",
     description:
-      "AMS guide to applying to math PhD programs: statements, recommendations, the subject GRE (or not), and how to choose programs that fit how you actually like to work.",
-    href: "https://www.ams.org/programs/students/undergrad/undergrad",
+      "AMS guidance on applying to mathematics graduate programs, including statements, recommendations, and program selection.",
+    href: "https://www.ams.org/learning-careers/students/applying",
   },
   {
     id: "ams-careers",
     title: "AMS Career Resources",
     category: "Careers",
     description:
-      "Where math majors land outside academia: quant finance, data, software, actuarial, policy. Profiles, interviews, and starting-salary data from the American Mathematical Society.",
-    href: "https://www.ams.org/profession/career-info/career-index",
-  },
-  {
-    id: "siam-careers",
-    title: "SIAM Careers in Applied Math",
-    category: "Careers",
-    description:
-      "Stories from people who use math in industry. Especially useful if you're interested in operations research, modeling, scientific computing, or biostatistics.",
-    href: "https://www.siam.org/students-education/programs-initiatives/thinking-of-a-career-in-applied-mathematics",
-  },
-  {
-    id: "recommended-books",
-    title: "Recommended Reading",
-    category: "Books",
-    description:
-      "Books we keep recommending. From How to Prove It and How to Solve It to Visual Complex Analysis, A Mathematician's Apology, and Spivak's Calculus.",
-    href: "/resources/reading",
+      "American Mathematical Society career materials covering mathematical work in academia, industry, and public service.",
+    href: "https://www.ams.org/learning-careers/learning-careers",
   },
 ];

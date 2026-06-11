@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 
 const SITE_NAME = "Tulane Math Club";
 const SITE_DESC =
-  "Undergraduate math community at Tulane University for puzzles, Putnam prep, talks, resources, and social events.";
+  "Undergraduate mathematics organization at Tulane University with programs in problem solving, Putnam preparation, talks, and student resources.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tulanemathsociety.github.io"),

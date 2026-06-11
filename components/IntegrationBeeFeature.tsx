@@ -30,7 +30,7 @@ export function IntegrationBeeFeature({
                 Coming this fall
               </p>
               <p className="mt-1 font-serif text-xl leading-tight">
-                Integration Bee: speed-integration tournament
+                Integration Bee
               </p>
             </div>
           </div>
@@ -73,10 +73,9 @@ export function IntegrationBeeFeature({
           </h2>
 
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/85 sm:text-lg">
-            A bracket-style speed-integration tournament, Calc II ready,
-            spectator-friendly, and built around the kind of clever
-            substitutions that make integrals fun. We&apos;re planning this for
-            the fall; tell us you&apos;re in and we&apos;ll make it happen.
+            A proposed speed-integration tournament for Tulane undergraduates.
+            The event is intended for students with calculus experience and is
+            currently in the planning stage.
           </p>
 
           <dl className="mt-6 grid gap-4 text-sm sm:grid-cols-3">
@@ -103,7 +102,7 @@ export function IntegrationBeeFeature({
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href={LINKS.email} variant="secondary">
               <Trophy className="h-4 w-4" aria-hidden />
-              I want to compete
+              Express interest
             </Button>
             <Button
               href={LINKS.email}
@@ -111,7 +110,7 @@ export function IntegrationBeeFeature({
               className="border-white/40 text-white hover:bg-white/10"
             >
               <CalendarDays className="h-4 w-4" aria-hidden />
-              Help organize
+              Organizational inquiries
             </Button>
           </div>
         </div>

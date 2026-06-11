@@ -72,8 +72,9 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mt-5 max-w-xl text-lg leading-relaxed text-white/90 sm:text-xl"
           >
-            Puzzles, proofs, Putnam prep, talks, and community for anyone
-            curious about math. No major or prior contest experience required.
+            An undergraduate mathematics organization for Tulane students with
+            programs in problem solving, Putnam preparation, talks, and shared
+            academic interests.
           </motion.p>
 
           <motion.div
@@ -90,7 +91,7 @@ export function Hero() {
           </motion.div>
 
           <p className="mt-6 text-sm text-white/75">
-            No formal application. Just show up to any event.
+            Open to students from all majors and class years.
           </p>
         </div>
       </div>

@@ -20,11 +20,11 @@ export function CTASection() {
             Stay in touch
           </p>
           <h2 className="mt-2 font-serif text-3xl leading-tight sm:text-4xl">
-            Join us. No formal process, just show up.
+            Contact the club
           </h2>
           <p className="mt-4 max-w-xl text-white/85">
-            Email us with a question, a puzzle, or just to say hi, or come
-            to the next meeting. That&apos;s all there is to it.
+            Join the GroupMe for announcements or email the club for questions
+            about meetings, programs, and membership.
           </p>
         </div>
         <div className="flex flex-col gap-3 md:col-span-5 md:items-end md:justify-center">

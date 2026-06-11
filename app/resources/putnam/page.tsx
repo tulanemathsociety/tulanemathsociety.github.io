@@ -22,7 +22,7 @@ import { LINKS } from "@/lib/links";
 export const metadata: Metadata = {
   title: "Putnam Study Resources",
   description:
-    "Books, archives, and topic-by-topic study advice for the William Lowell Putnam Mathematical Competition. Curated for Tulane undergrads of any level.",
+    "Reference guide for Tulane students preparing for the William Lowell Putnam Mathematical Competition.",
 };
 
 const books = [
@@ -30,42 +30,42 @@ const books = [
     title: "Putnam and Beyond",
     author: "Răzvan Gelca, Titu Andreescu",
     note:
-      "The most comprehensive single book. ~800 problems organized by topic with full solutions. The standard reference for serious prep.",
+      "Comprehensive collection of problems organized by topic with full solutions. A standard reference for sustained preparation.",
     level: "All levels",
   },
   {
     title: "Problem-Solving Strategies",
     author: "Arthur Engel",
     note:
-      "Olympiad-flavored but the techniques (invariants, extremal principle, coloring) transfer directly to Putnam. Great for building intuition.",
+      "Emphasizes techniques such as invariants, extremal arguments, and combinatorial reasoning that transfer well to Putnam study.",
     level: "Intermediate",
   },
   {
     title: "The Art of Problem Solving, Volume 2",
     author: "Sandor Lehoczky, Richard Rusczyk",
     note:
-      "Reads like a friendly mentor. Best on-ramp if you have no contest background. Skip Vol. 1 if you've taken Calc I.",
+      "Accessible starting point for students without previous competition experience.",
     level: "Beginner",
   },
   {
     title: "Mathematical Olympiad Challenges",
     author: "Titu Andreescu, Răzvan Gelca",
     note:
-      "Problems grouped by trick. Useful for drilling a single technique at a time.",
+      "Problems organized by method. Useful for focused work on a single technique at a time.",
     level: "Intermediate",
   },
   {
     title: "The William Lowell Putnam Mathematical Competition (1985–2000)",
     author: "Kedlaya, Poonen, Vakil",
     note:
-      "Every problem from 1985 to 2000 with multiple solutions and historical notes. Worth owning.",
+      "Collection of problems from 1985 to 2000 with multiple solutions and historical commentary.",
     level: "All levels",
   },
   {
     title: "How to Solve It",
     author: "George Pólya",
     note:
-      "Not a problem book. The book on mathematical problem solving. Short, old, still the best 80 pages on the topic.",
+      "Classic short work on mathematical method and problem-solving practice.",
     level: "All levels",
   },
 ];
@@ -74,22 +74,22 @@ const archives = [
   {
     title: "Putnam Archive (Kiran Kedlaya)",
     href: "https://kskedlaya.org/putnam-archive/",
-    note: "The definitive archive. Every Putnam problem and solution from 1985 onward, maintained by a former Putnam Fellow.",
+    note: "Extensive archive of Putnam problems and solutions from 1985 onward, maintained by a former Putnam Fellow.",
   },
   {
     title: "Art of Problem Solving: Putnam Forum",
     href: "https://artofproblemsolving.com/community/c7_putnam",
-    note: "Active discussion of each year's problems. Often has multiple elegant solutions per problem.",
+    note: "Discussion forum for individual competition years, often with multiple solution approaches for each problem.",
   },
   {
     title: "Putnam Competition (official MAA)",
     href: "https://maa.org/math-competitions/putnam-competition",
-    note: "Official rules, registration, and recent winners. Where Tulane registers students each year.",
+    note: "Official rules, registration information, and recent results.",
   },
   {
     title: "AoPS Wiki: Putnam",
     href: "https://artofproblemsolving.com/wiki/index.php/Putnam_competitions",
-    note: "Yearly problem indexes with links to discussion threads. Easy to browse.",
+    note: "Yearly problem index with links to archived discussion threads.",
   },
 ];
 
@@ -119,7 +119,7 @@ const topics = [
   {
     icon: InfinityIcon,
     name: "Analysis & calculus",
-    why: "The A1 / B1 problems often look like cleverly-disguised calculus questions. Real analysis intuition pays off later.",
+    why: "Introductory problems often resemble calculus or real analysis exercises. Later problems require stronger analytic judgment.",
     drill: [
       "Series convergence tests and tricky sums",
       "Mean value theorem, intermediate value theorem",
@@ -141,7 +141,7 @@ const topics = [
   {
     icon: Calculator,
     name: "Inequalities & algebra",
-    why: "AM-GM, Cauchy-Schwarz, and clever substitutions. The easiest topic to drill, and high yield on A1 / B1.",
+    why: "AM-GM, Cauchy-Schwarz, and algebraic substitutions. Reliable material for structured practice, especially on introductory problems.",
     drill: [
       "AM-GM and weighted AM-GM",
       "Cauchy-Schwarz in Engel (Titu) form",
@@ -152,7 +152,7 @@ const topics = [
   {
     icon: Compass,
     name: "Geometry",
-    why: "Less common than the others, but worth a week. Often blends with linear algebra or complex numbers.",
+    why: "Less frequent than other topics, but still represented regularly. Often overlaps with linear algebra or complex numbers.",
     drill: [
       "Complex numbers for plane geometry",
       "Vectors, dot products, cross products",
@@ -166,7 +166,7 @@ const studyPlan = [
   {
     label: "Week 1",
     title: "Read one A1 and one B1 per day",
-    body: "A1 and B1 are the easiest problem on each session. Twenty minutes each, no looking up. Write down whatever you observe, even if you don't solve it.",
+    body: "A1 and B1 are typically the most accessible problems on each session. Spend twenty minutes on each without consulting notes, and record partial observations even when a full solution does not emerge.",
   },
   {
     label: "Week 2",
@@ -181,7 +181,7 @@ const studyPlan = [
   {
     label: "Week 4",
     title: "Come to prep, bring your write-ups",
-    body: "The fastest way to improve is to talk through your reasoning with someone else. That's what the weekly Putnam prep session is for.",
+    body: "Bring written solutions and partial attempts to a preparation session for discussion and review.",
   },
 ];
 
@@ -212,9 +212,8 @@ export default function PutnamResourcesPage() {
             Putnam Study Resources
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/85">
-            Books, archives, and topic-by-topic advice for studying the Putnam.
-            Built for Tulane students who&apos;ve never done competition math
-            before, and useful for people who have.
+            Books, archives, and topic-based guidance for students preparing
+            for the Putnam Competition.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href="/putnam" variant="secondary">
@@ -236,25 +235,21 @@ export default function PutnamResourcesPage() {
         <div className="grid gap-12 lg:grid-cols-3">
           <FadeIn className="lg:col-span-2">
             <SectionHeader
-              eyebrow="How to use this page"
-              title="If you've never studied for Putnam before"
+              eyebrow="Orientation"
+              title="A starting point for new participants"
             />
             <div className="mt-6 space-y-4 text-tulane-charcoal/85">
               <p>
-                The Putnam isn&apos;t a test of how much math you&apos;ve
-                taken; it&apos;s a test of how you think about problems. The
-                median score is famously 0 or 1 out of 120. That&apos;s not a
-                joke about how hard it is. It&apos;s a sign that the people
-                who do well aren&apos;t the ones who&apos;ve memorized the
-                most theorems; they&apos;re the ones who&apos;ve seen the most
-                problems and recognize patterns.
+                The Putnam rewards sustained exposure to proof-based problem
+                solving. Because median scores are often very low, progress is
+                best measured through stronger methods, clearer write-ups, and
+                increased familiarity with recurring problem types.
               </p>
               <p>
-                The cheapest, highest-yield thing you can do is read past
-                problems and their solutions. Even when you can&apos;t solve
-                one, reading a clean solution and asking &quot;what would I
-                have needed to notice?&quot; teaches you the pattern. Do that
-                fifty times and the next A1 looks familiar.
+                A practical first step is to read past problems alongside
+                complete solutions. Even unsuccessful attempts become useful
+                once you compare them with a finished argument and identify the
+                key observation or method.
               </p>
             </div>
           </FadeIn>
@@ -272,16 +267,16 @@ export default function PutnamResourcesPage() {
                 </li>
                 <li>
                   <span className="font-semibold text-tulane-navy">A1 / B1:</span>{" "}
-                  The easiest problem on each session. Most accessible to
-                  first-timers.
+                  Typically the most accessible problem on each session.
                 </li>
                 <li>
                   <span className="font-semibold text-tulane-navy">A6 / B6:</span>{" "}
-                  Brutally hard. Skip them at first.
+                  Usually among the most difficult problems on the exam.
                 </li>
                 <li>
                   <span className="font-semibold text-tulane-navy">Tone:</span>{" "}
-                  Short, elegant problems. Cleverness over computation.
+                  Short statements, proof-based reasoning, and limited
+                  computation.
                 </li>
               </ul>
             </div>
@@ -294,7 +289,7 @@ export default function PutnamResourcesPage() {
           <SectionHeader
             eyebrow="Books"
             title="What to read"
-            description="You don't need to own all of these. Pick one for technique and one for problems."
+            description="A small selection of books for technique, worked examples, and sustained practice."
           />
           <ul className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {books.map((b, i) => (
@@ -320,8 +315,8 @@ export default function PutnamResourcesPage() {
             ))}
           </ul>
           <p className="mt-8 text-sm text-tulane-charcoal/70">
-            The Tulane Math Department library has copies of most of these.
-            Email an officer if you can&apos;t find one.
+            Department and university libraries hold copies of several of these
+            titles. Contact the club if you need help locating one.
           </p>
         </div>
       </section>
@@ -330,7 +325,7 @@ export default function PutnamResourcesPage() {
         <SectionHeader
           eyebrow="Problem archives"
           title="Where to find past problems"
-          description="Old problems are the curriculum. These four cover everything you need."
+          description="Past problems and solutions are the most useful long-term preparation resource."
         />
         <ul className="mt-10 grid gap-6 md:grid-cols-2">
           {archives.map((a, i) => (
@@ -368,8 +363,8 @@ export default function PutnamResourcesPage() {
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
           <SectionHeader
             eyebrow="Topics"
-            title="What actually shows up"
-            description="Putnam problems cluster around a handful of topics. Drill one at a time."
+            title="Core subject areas"
+            description="Most Putnam problems draw from a recurring set of undergraduate topics."
           />
           <ul className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {topics.map((t, i) => (
@@ -387,7 +382,7 @@ export default function PutnamResourcesPage() {
                     {t.why}
                   </p>
                   <p className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-tulane-green">
-                    Drill these
+                    Suggested topics
                   </p>
                   <ul className="mt-2 space-y-1.5 text-sm text-tulane-charcoal/85">
                     {t.drill.map((d) => (
@@ -411,7 +406,7 @@ export default function PutnamResourcesPage() {
         <SectionHeader
           eyebrow="A starter plan"
           title="Your first month"
-          description="If you're starting from zero, here's a low-effort, four-week ramp."
+          description="A four-week introductory plan for students beginning preparation."
         />
         <ol className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {studyPlan.map((s, i) => (
@@ -436,11 +431,11 @@ export default function PutnamResourcesPage() {
         <div className="grid items-center gap-6 border border-tulane-warm-gray bg-tulane-green p-8 text-white sm:p-10 md:grid-cols-3">
           <div className="md:col-span-2">
             <h2 className="font-serif text-2xl sm:text-3xl">
-              Come to a prep session
+              Attend a preparation session
             </h2>
             <p className="mt-3 text-white/85">
-              Weekly, friendly, beginners welcome. The fastest way to make
-              progress is to work through problems with other students.
+              Preparation sessions provide structured time to work through
+              problems with other students and review solution methods.
             </p>
           </div>
           <div className="flex flex-wrap gap-3 md:justify-end">

@@ -34,7 +34,7 @@ export function Wordmark({
       />
       <span className="flex flex-col">
         <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-tulane-green">
-          Tulane
+          Tulane{" "}
         </span>
         <span className="font-serif text-lg tracking-wide text-tulane-navy">
           Math Club
