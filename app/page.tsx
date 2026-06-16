@@ -2,10 +2,10 @@ import {
   Brain,
   Trophy,
   Mic,
-  PartyPopper,
+  Users,
   Briefcase,
-  Compass,
   Clock,
+  FileText,
 } from "lucide-react";
 import { LINKS } from "@/lib/links";
 import { Hero } from "@/components/Hero";
@@ -13,44 +13,43 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { CTASection } from "@/components/CTASection";
 import { Button } from "@/components/Button";
 import { FadeIn } from "@/components/FadeIn";
-import { IntegrationBeeFeature } from "@/components/IntegrationBeeFeature";
 
 const whatWeDo = [
   {
     icon: Brain,
-    title: "Weekly problem-solving nights",
+    title: "Problem-solving sessions",
     description:
-      "Small groups, a stack of fun problems, and a whiteboard. The best way to meet the rest of the club.",
+      "Regular meetings centered on collaborative work at the board.",
   },
   {
     icon: Trophy,
     title: "Putnam preparation",
     description:
-      "Beginner-friendly weekly sessions. We treat the Putnam as a puzzle, not a gauntlet.",
+      "Collaborative preparation for students interested in the Putnam Mathematical Competition.",
   },
   {
     icon: Mic,
-    title: "Undergraduate talks",
+    title: "Student and faculty talks",
     description:
-      "Students and faculty share favorite ideas in 15–30 minute talks. Pizza and questions follow.",
+      "Short presentations on pure and applied topics, research interests, and elegant arguments.",
   },
   {
-    icon: PartyPopper,
-    title: "Social events",
+    icon: Users,
+    title: "Department community",
     description:
-      "Game nights, student–faculty lunches, and end-of-semester gatherings around the city.",
+      "Occasional lunches and conversations with students and faculty across the department.",
   },
   {
     icon: Briefcase,
-    title: "Career & grad school panels",
+    title: "Academic and professional guidance",
     description:
-      "REUs, graduate programs, and what alumni actually do: quant, data, software, research, teaching.",
+      "Shared information about courses, REUs, graduate study, and related opportunities.",
   },
   {
-    icon: Compass,
-    title: "Peer advising & resources",
+    icon: FileText,
+    title: "Writing and technical resources",
     description:
-      "Course planning, LaTeX, proof writing, and a growing list of things-we-wish-we-knew-sooner.",
+      "References on proof writing, LaTeX, and other tools useful in upper-level coursework.",
   },
 ];
 
@@ -69,15 +68,17 @@ export default function HomePage() {
             />
             <span>
               <span className="font-semibold text-tulane-navy">Heads up:</span>{" "}
-              our weekly meeting time is still being decided for the semester.
-              Email us and we&apos;ll let you know as soon as it&apos;s set.
+              the regular meeting schedule for Fall 2026 is still being
+              finalized. Updates will be posted through the GroupMe.
             </span>
           </p>
           <a
-            href={LINKS.email}
+            href={LINKS.groupme}
+            target="_blank"
+            rel="noopener noreferrer"
             className="self-start text-sm font-medium text-tulane-green hover:text-tulane-secondary-green sm:self-auto"
           >
-            Email us →
+            Join the GroupMe →
           </a>
         </div>
       </section>
@@ -86,8 +87,8 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-4 pb-12 pt-20 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="What we do"
-          title="A welcoming math community at Tulane"
-          description="Anyone curious about math is welcome: math majors, CS majors, physics, econ, biomedical, philosophy, undecided. Come for whichever of these sounds fun."
+          title="An undergraduate mathematics community at Tulane"
+          description="The club organizes problem-solving sessions, Putnam preparation, talks, and shared academic resources for students interested in mathematics."
         />
         <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {whatWeDo.map((item, i) => (
@@ -111,11 +112,6 @@ export default function HomePage() {
         </ul>
       </section>
 
-      {/* Featured event spotlight */}
-      <section className="mx-auto max-w-6xl px-4 pb-20 pt-4 sm:px-6 lg:px-8">
-        <IntegrationBeeFeature variant="spotlight" />
-      </section>
-
       {/* Weekly puzzle teaser */}
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
         <FadeIn>
@@ -124,14 +120,14 @@ export default function HomePage() {
               Weekly puzzle
             </p>
             <h2 className="mt-2 font-serif text-3xl text-tulane-navy sm:text-4xl">
-              Coming soon
+              Not yet launched
             </h2>
             <p className="mt-4 max-w-2xl leading-relaxed text-tulane-charcoal/85">
-              We have not posted the first weekly puzzle yet. When it is ready,
-              it will live on the puzzle page.
+              The weekly puzzle series has not yet begun. When the first puzzle
+              is posted, it will appear on the puzzle page.
             </p>
             <Button href="/puzzle" variant="outline" className="mt-6">
-              Puzzle page
+              View puzzle page
             </Button>
           </div>
         </FadeIn>

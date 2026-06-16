@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { SectionHeader } from "@/components/SectionHeader";
 import { OfficerCard } from "@/components/OfficerCard";
 import { MathPatternBackground } from "@/components/MathPatternBackground";
 import { FadeIn } from "@/components/FadeIn";
@@ -8,7 +7,7 @@ import { officers } from "@/lib/officers";
 export const metadata: Metadata = {
   title: "Officers",
   description:
-    "Meet the Tulane Math Club officers and faculty advisor. Get in touch about events, talks, or getting involved.",
+    "Tulane Math Club officers and faculty advisor.",
 };
 
 export default function OfficersPage() {
@@ -20,11 +19,18 @@ export default function OfficersPage() {
       <section className="relative isolate overflow-hidden border-b border-tulane-warm-gray bg-tulane-pale-green/40">
         <MathPatternBackground variant="graph" />
         <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-          <SectionHeader
-            eyebrow="The team"
-            title="Officers & advisor"
-            description="The students who keep the club running, and the faculty advisor who helps us along. Email any of us; we like getting emails."
-          />
+          <div className="max-w-4xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-tulane-blue">
+              Club leadership
+            </p>
+            <h1 className="mt-3 font-serif text-4xl leading-tight text-tulane-navy sm:text-5xl">
+              Officers
+            </h1>
+            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-tulane-charcoal/85">
+              Questions about meetings, talks, or club administration may be
+              directed to the officers below.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -40,7 +46,7 @@ export default function OfficersPage() {
         {advisors.length > 0 && (
           <div className="mt-14">
             <h2 className="font-serif text-2xl text-tulane-navy">
-              Faculty advisor
+              Faculty Advisor
             </h2>
             <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {advisors.map((o) => (

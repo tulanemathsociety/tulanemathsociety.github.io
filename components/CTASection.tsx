@@ -17,14 +17,15 @@ export function CTASection() {
       <div className="relative grid gap-8 px-6 py-12 sm:px-10 sm:py-16 md:grid-cols-12">
         <div className="md:col-span-7">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/70">
-            Stay in touch
+            Stay informed
           </p>
           <h2 className="mt-2 font-serif text-3xl leading-tight sm:text-4xl">
-            Join us. No formal process, just show up.
+            Follow the club and contact us directly.
           </h2>
           <p className="mt-4 max-w-xl text-white/85">
-            Email us with a question, a puzzle, or just to say hi, or come
-            to the next meeting. That&apos;s all there is to it.
+            For meeting announcements and schedule updates, join the GroupMe.
+            Questions about talks, resources, or club business can also be sent
+            by email.
           </p>
         </div>
         <div className="flex flex-col gap-3 md:col-span-5 md:items-end md:justify-center">

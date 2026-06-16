@@ -12,6 +12,10 @@ const CATEGORIES: ResourceCategory[] = [
   "Books",
 ];
 
+function categoryId(category: ResourceCategory) {
+  return category.toLowerCase().replace(/[^a-z]+/g, "-");
+}
+
 export function ResourcesBrowser({ resources }: { resources: Resource[] }) {
   return (
     <div className="space-y-10">
@@ -23,7 +27,7 @@ export function ResourcesBrowser({ resources }: { resources: Resource[] }) {
         }
 
         return (
-          <section key={category}>
+          <section key={category} id={categoryId(category)} className="scroll-mt-24">
             <h2 className="font-serif text-2xl text-tulane-navy">{category}</h2>
             <ul className="mt-4 divide-y divide-tulane-warm-gray border border-tulane-warm-gray bg-white">
               {items.map((resource) => {

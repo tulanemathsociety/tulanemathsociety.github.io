@@ -14,9 +14,9 @@ export function Footer() {
           <div className="md:col-span-2">
             <Wordmark />
             <p className="mt-4 max-w-md text-sm leading-relaxed text-tulane-charcoal/80">
-              An informal undergraduate community at Tulane University for
-              anyone who enjoys mathematical ideas, problem solving, and
-              meeting other curious students.
+              Tulane Math Club is an undergraduate organization for students
+              interested in mathematical problem solving, proof, and related
+              coursework.
             </p>
           </div>
 
@@ -112,7 +112,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-tulane-warm-gray pt-6 text-xs text-tulane-charcoal/60 sm:flex-row sm:items-center">
-          <p>© {year} Tulane Math Club. Built by students, for students.</p>
+          <p>© {year} Tulane Math Club.</p>
           <p>New Orleans, Louisiana</p>
         </div>
       </div>

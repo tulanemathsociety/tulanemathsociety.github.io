@@ -53,7 +53,7 @@ export function Hero() {
             className="inline-flex items-center gap-2  border border-white/30 bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-white backdrop-blur"
           >
             <Sparkles className="h-3.5 w-3.5" aria-hidden />
-            Undergraduate community
+            Undergraduate mathematics community
           </motion.span>
 
           <motion.h1
@@ -72,8 +72,9 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mt-5 max-w-xl text-lg leading-relaxed text-white/90 sm:text-xl"
           >
-            Puzzles, proofs, Putnam prep, talks, and community for anyone
-            curious about math. No major or prior contest experience required.
+            An undergraduate mathematics community for students interested in
+            problem solving, proof, Putnam preparation, and mathematical
+            discussion.
           </motion.p>
 
           <motion.div
@@ -90,7 +91,7 @@ export function Hero() {
           </motion.div>
 
           <p className="mt-6 text-sm text-white/75">
-            No formal application. Just show up to any event.
+            Open to all Tulane undergraduates with an interest in mathematics.
           </p>
         </div>
       </div>
