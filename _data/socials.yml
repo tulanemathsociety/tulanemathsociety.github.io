@@ -1,0 +1,26 @@
+# Contact links shown in the footer, on the about page, and in search.
+# Rendered by the jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+#
+# `email` is a key the plugin knows, so it gets a built-in icon. Any other key
+# falls through to the custom branch, which needs a mapping of logo / title / url.
+# It must be a mapping per key, not a list: the plugin reads social[1]['logo']
+# directly and an array would raise.
+#
+# `logo` is a Font Awesome 7 class. Font Awesome has no GroupMe brand icon, so
+# these are generic solid icons chosen to read clearly at 1em.
+email: tulanemathsociety@gmail.com
+
+groupme:
+  logo: fa-solid fa-comments
+  title: GroupMe
+  url: https://groupme.com/join_group/96206392/6syQhgSf
+
+wavesync:
+  logo: fa-solid fa-users
+  title: WaveSync
+  url: https://tulane.campuslabs.com/engage/organization/mathclub
+
+math_department:
+  logo: fa-solid fa-building-columns
+  title: Tulane Department of Mathematics
+  url: https://sse.tulane.edu/math

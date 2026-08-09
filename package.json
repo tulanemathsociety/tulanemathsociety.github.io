@@ -1,31 +1,12 @@
 {
-  "name": "tulane-math-club",
-  "version": "0.1.0",
+  "name": "tulane-math-club-site",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "clsx": "^2.1.1",
-    "framer-motion": "^11.11.17",
-    "lucide-react": "^0.460.0",
-    "next": "14.2.35",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "tailwind-merge": "^2.5.4"
+    "lint:prettier": "prettier . --check",
+    "format": "prettier . --write"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "14.2.35",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.15",
-    "typescript": "^5"
+    "@shopify/prettier-plugin-liquid": "^1.10.0",
+    "prettier": "^3.8.0"
   }
 }

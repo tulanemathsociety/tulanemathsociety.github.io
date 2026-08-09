@@ -1,0 +1,159 @@
+/*******************************************************************************
+ * Tulane brand layer
+ *
+ * Values are from the official Tulane University Brand Guide (August 2024).
+ * Tulane rebranded in 2024; the pre-2024 palette (Tulane Green #336666, Storm
+ * Shutters, Mardi Gras, Olive Branch, ...) is obsolete, and every third-party
+ * "school colors" aggregator still publishes those older values. Do not
+ * "correct" the hexes below against one of those sites.
+ *
+ * The guide mandates a 60% green / 30% white / 10% blue ratio, with blue as an
+ * accent only. That is why Tulane Blue is not used for body links: at 1.94:1
+ * against white it fails WCAG AA outright. Links use Tulane Green (7.72:1) and
+ * hover to Bayou (4.62:1). In dark mode the roles flip, because Tulane Green on
+ * a dark background is the one that fails.
+ *
+ * Loaded last from assets/css/main.scss so these :root declarations override the
+ * gem-owned tokens in al_folio_core's _themes.scss without forking that file.
+ ******************************************************************************/
+
+// Primary
+$tulane-green: #255c4e; // PANTONE 626
+$tulane-white: #ffffff; // PANTONE 7541
+$tulane-blue: #6fc5e8; // PANTONE 297, accent only
+
+// Secondary
+$tulane-lichen: #e7f2e0; // 7485 C
+$tulane-street-tile: #b9d7e8; // 290 C
+$tulane-moss: #9ba64a; // 7495 C
+$tulane-magnolia: #f0ebdb; // 7527 C
+$tulane-streetcar: #688c3e; // 363 C
+$tulane-moon: #edece8; // 427 C
+$tulane-midnight: #001b3f; // 540 C
+$tulane-coffee: #797066; // Warm Gray 9 C
+$tulane-bayou: #138094; // 632 C
+$tulane-basin: #343333; // Black 7 C
+
+// Type. Tulane's print faces are Adobe Caslon Pro and Freight Sans Pro, both
+// commercially licensed and not distributable from a public GitHub Pages site.
+// The guide's own fallback tier is "WEB SAFE FONTS: Georgia, Verdana", so those
+// are the named fallbacks. Libre Caslon Text and Source Sans 3 are free Google
+// Fonts stand-ins chosen for shape; they are NOT specified by Tulane.
+$tulane-serif: "Libre Caslon Text", Georgia, "Times New Roman", serif;
+$tulane-sans: "Source Sans 3", Verdana, -apple-system, "Segoe UI", sans-serif;
+
+:root {
+  --global-bg-color: #{$tulane-white};
+  --global-code-bg-color: rgba(37, 92, 78, 0.06);
+  --global-text-color: #{$tulane-basin};
+  --global-text-color-light: #{$tulane-coffee};
+  --global-theme-color: #{$tulane-green};
+  --global-hover-color: #{$tulane-bayou};
+  --global-hover-text-color: #{$tulane-white};
+  --global-footer-bg-color: #{$tulane-green};
+  --global-footer-text-color: #{$tulane-lichen};
+  --global-footer-link-color: #{$tulane-white};
+  --global-divider-color: rgba(52, 51, 51, 0.12);
+  --global-card-bg-color: #{$tulane-white};
+  --global-highlight-color: #{$tulane-bayou};
+  --global-back-to-top-bg-color: rgba(37, 92, 78, 0.75);
+  --global-back-to-top-text-color: #{$tulane-white};
+  --global-distill-app-color: #{$tulane-coffee};
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #1c1c1d;
+  --global-code-bg-color: rgba(111, 197, 232, 0.08);
+  --global-text-color: #{$tulane-moon};
+  --global-text-color-light: #a9a49c;
+  // Roles swap here: Tulane Green is unreadable on a dark ground (2.72:1 vs
+  // black), Tulane Blue is excellent (10.83:1).
+  --global-theme-color: #{$tulane-blue};
+  --global-hover-color: #{$tulane-street-tile};
+  --global-hover-text-color: #1c1c1d;
+  --global-footer-bg-color: #{$tulane-green};
+  --global-footer-text-color: #{$tulane-lichen};
+  --global-footer-link-color: #{$tulane-white};
+  --global-divider-color: rgba(237, 236, 232, 0.16);
+  --global-card-bg-color: #242426;
+  --global-highlight-color: #{$tulane-street-tile};
+  --global-back-to-top-bg-color: rgba(111, 197, 232, 0.75);
+  --global-back-to-top-text-color: #1c1c1d;
+  --global-distill-app-color: #{$tulane-moon};
+}
+
+/* Typography. al_folio_core ships body{font-family:Roboto} inside Tailwind's
+   @layer base; these rules are unlayered, so they win the cascade without
+   needing !important. */
+body {
+  font-family: $tulane-sans;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-title,
+.card-title,
+.navbar-brand {
+  font-family: $tulane-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* The theme lowercases nav and page titles. Tulane's guide sets the wordmark in
+   caps and the club's own pages read as proper nouns, so restore normal casing. */
+.navbar-nav .nav-item .nav-link,
+.post-title,
+.card-title {
+  text-transform: none;
+}
+
+/* The homepage's "news" and "latest posts" headings are hardcoded lowercase in
+   al_folio_core's _layouts/about.liquid. Capitalising here beats shadowing that
+   whole layout for two words.
+
+   This deliberately does NOT use `h2 > a[href$="/news/"]`, which would be more
+   precise: PurgeCSS's extractor drops attribute selectors, so that version works
+   locally and silently vanishes in the CI build. Adding /href\$=/ to the purgecss
+   safelist does not rescue it either. A class-plus-element selector survives.
+   Linked h2s are the only ones on the site, so the wider selector is harmless. */
+.post h2 > a {
+  text-transform: capitalize;
+}
+
+/* The theme sets .contact-icons to font-size: 4rem, which is sized for a big
+   personal-homepage row of social links. Scale it down and space the icons
+   evenly, which the 4rem sizing relied on word-spacing to do. */
+.social .contact-icons {
+  font-size: 2.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+
+  a img {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-bottom: 0;
+  }
+
+  a svg {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-bottom: 0;
+  }
+}
+
+/* Blockquotes pick up the green rather than the theme's default accent. */
+blockquote {
+  border-left: 3px solid var(--global-theme-color);
+  background-color: rgba(231, 242, 224, 0.5);
+}
+
+html[data-theme="dark"] blockquote {
+  background-color: rgba(111, 197, 232, 0.07);
+}

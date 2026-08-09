@@ -1,0 +1,43 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// LOCAL OVERRIDE of al_folio_core's assets/css/main.scss.
+// It is a verbatim copy of the gem's file plus the final `@use "tulane"` line,
+// which layers the Tulane palette and typography on top of the theme defaults.
+// Keeping the override this thin is deliberate: when the gem updates main.scss,
+// re-copy it and re-append that one line.
+// Check for drift with: bundle exec al-folio upgrade overrides diff assets/css/main.scss
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+// Tulane brand layer. Loaded last so its :root declarations win the cascade.
+@use "tulane";

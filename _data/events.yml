@@ -1,0 +1,19 @@
+# Club events. This is the only file you edit to change the events page.
+#
+# Add a new event by appending a block. Order does not matter; the page sorts by
+# date and splits upcoming from past automatically using the build date.
+#
+#   title:       required
+#   date:        required, YYYY-MM-DD. The weekday is derived, so don't write it.
+#   time:        optional. Omit the key entirely if unknown; do not write "TBD".
+#   location:    optional. Same.
+#   description: optional. Markdown is supported.
+#   rsvp:        optional. Adds a "Details and RSVP" link.
+#
+# An event with no time or location renders a "Time and location to be announced"
+# note on its own, so there is nothing to remember to clean up later.
+
+- title: First Meeting
+  date: 2026-08-23
+  description: First meeting of the year. Everyone welcome.
+  rsvp: https://tulane.campuslabs.com/engage/organization/mathclub
