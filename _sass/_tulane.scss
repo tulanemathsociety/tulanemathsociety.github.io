@@ -112,6 +112,19 @@ h6,
   text-transform: none;
 }
 
+/* The homepage's "news" and "latest posts" headings are hardcoded lowercase in
+   al_folio_core's _layouts/about.liquid. Capitalising here beats shadowing that
+   whole layout for two words.
+
+   This deliberately does NOT use `h2 > a[href$="/news/"]`, which would be more
+   precise: PurgeCSS's extractor drops attribute selectors, so that version works
+   locally and silently vanishes in the CI build. Adding /href\$=/ to the purgecss
+   safelist does not rescue it either. A class-plus-element selector survives.
+   Linked h2s are the only ones on the site, so the wider selector is harmless. */
+.post h2 > a {
+  text-transform: capitalize;
+}
+
 /* The theme sets .contact-icons to font-size: 4rem, which is sized for a big
    personal-homepage row of social links. Scale it down and space the icons
    evenly, which the 4rem sizing relied on word-spacing to do. */
