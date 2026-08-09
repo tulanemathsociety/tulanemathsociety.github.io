@@ -112,6 +112,29 @@ h6,
   text-transform: none;
 }
 
+/* The theme sets .contact-icons to font-size: 4rem, which is sized for a big
+   personal-homepage row of social links. Scale it down and space the icons
+   evenly, which the 4rem sizing relied on word-spacing to do. */
+.social .contact-icons {
+  font-size: 2.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+
+  a img {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-bottom: 0;
+  }
+
+  a svg {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-bottom: 0;
+  }
+}
+
 /* Blockquotes pick up the green rather than the theme's default accent. */
 blockquote {
   border-left: 3px solid var(--global-theme-color);

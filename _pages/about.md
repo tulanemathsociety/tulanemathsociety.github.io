@@ -14,7 +14,7 @@ profile:
     <p>with an interest in mathematics.</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # icons live in the navbar instead, via enable_navbar_social in _config.yml
 
 announcements:
   enabled: true # includes a list of news items
@@ -30,22 +30,5 @@ latest_posts:
 The Tulane Math Club is an undergraduate mathematics community for students interested in
 problem solving, proof, Putnam preparation, and mathematical discussion.
 
-**First meeting: Sunday, August 23.** Time and location to be announced. The rest of the Fall
-2026 schedule is still being finalized, and updates are posted through the
-[GroupMe](https://groupme.com/join_group/96206392/6syQhgSf).
-
-## What we do
-
-- **Problem-solving sessions.** Regular meetings centered on collaborative work at the board.
-- **Putnam preparation.** Collaborative preparation for students interested in the [Putnam Mathematical Competition]({{ '/resources/#putnam' | relative_url }}).
-- **Student and faculty talks.** Short presentations on pure and applied topics, research interests, and elegant arguments.
-- **Department community.** Occasional lunches and conversations with students and faculty across the department.
-- **Academic and professional guidance.** Shared information about courses, REUs, graduate study, and related opportunities.
-- **Writing and technical resources.** [References]({{ '/resources/' | relative_url }}) on proof writing, LaTeX, and other tools useful in upper-level coursework.
-
-## Stay informed
-
-For meeting announcements and schedule updates, join the
-[GroupMe](https://groupme.com/join_group/96206392/6syQhgSf). Questions about talks, resources,
-or club business can also be sent to
-<a href="mailto:tulanemathsociety@gmail.com">tulanemathsociety@gmail.com</a>.
+Join the [GroupMe](https://groupme.com/join_group/96206392/6syQhgSf) for meeting times, or
+email us at <a href="mailto:tulanemathsociety@gmail.com">tulanemathsociety@gmail.com</a>.
