@@ -1,0 +1,24 @@
+# Social and contact links shown in the footer, on the about page, and in search.
+# Rendered by the jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+#
+# Keys the plugin recognises (email, rss_icon, ...) render with a built-in icon.
+# Any other key falls through to the custom branch, which needs a mapping of
+# logo / title / url. Note it must be a mapping per key, not a list: the plugin
+# reads social[1]['logo'] directly and an array would raise.
+email: tulanemathsociety@gmail.com
+rss_icon: true
+
+groupme:
+  logo: fa-solid fa-comment-dots
+  title: GroupMe
+  url: https://groupme.com/join_group/96206392/6syQhgSf
+
+wavesync:
+  logo: fa-solid fa-users
+  title: WaveSync
+  url: https://tulane.campuslabs.com/engage/organization/mathclub
+
+math_department:
+  logo: fa-solid fa-square-root-variable
+  title: Tulane Department of Mathematics
+  url: https://sse.tulane.edu/math
