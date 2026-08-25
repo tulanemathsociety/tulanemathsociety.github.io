@@ -157,3 +157,19 @@ blockquote {
 html[data-theme="dark"] blockquote {
   background-color: rgba(111, 197, 232, 0.07);
 }
+
+/* The theme sets .header-bar h1 to a flat 5rem with no media query, which is
+   sized for a short blog name on a desktop. At 80px "Weekly Problem Set" is
+   enormous on a phone and wraps to three lines. clamp keeps the desktop size
+   and scales down on narrow screens. The blog description is empty, so hide
+   the h2 the template still emits rather than leave a gap under the title. */
+.header-bar {
+  h1 {
+    font-size: clamp(2.25rem, 9vw, 5rem);
+    line-height: 1.15;
+  }
+
+  h2:empty {
+    display: none;
+  }
+}
