@@ -31,13 +31,13 @@ whole of its day, hence the +86399 on the cutoff.
 
 {% if upcoming.size == 0 %}
 
-No events are scheduled right now. Announcements go out through the
-[GroupMe](https://groupme.com/join_group/96206392/6syQhgSf).
+No events are scheduled right now. Announcements go out by email from
+<a href="mailto:enaig@tulane.edu">enaig@tulane.edu</a>.
 
 {% else %}
 
-Announcements and any last-minute changes go out through the
-[GroupMe](https://groupme.com/join_group/96206392/6syQhgSf).
+Announcements and any last-minute changes go out by email from
+<a href="mailto:enaig@tulane.edu">enaig@tulane.edu</a>.
 
 {% for event in upcoming %}
 
@@ -49,7 +49,7 @@ Announcements and any last-minute changes go out through the
 
 {{ event.description | markdownify }}
 
-{% if event.rsvp %}[Details and RSVP]({{ event.rsvp }}){% endif %}
+{% if event.details %}[Details]({{ event.details | relative_url }}){% if event.rsvp %} &middot; {% endif %}{% endif %}{% if event.rsvp %}[RSVP on WaveSync]({{ event.rsvp }}){% endif %}
 
 {% endfor %}
 {% endif %}

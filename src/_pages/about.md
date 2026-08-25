@@ -31,4 +31,4 @@ The Tulane Math Club is an undergraduate mathematics community for students inte
 problem solving, proof, Putnam preparation, and mathematical discussion.
 
 Join the [GroupMe](https://groupme.com/join_group/96206392/6syQhgSf) for meeting times, or
-email us at <a href="mailto:tulanemathsociety@gmail.com">tulanemathsociety@gmail.com</a>.
+email us at <a href="mailto:enaig@tulane.edu">enaig@tulane.edu</a>.

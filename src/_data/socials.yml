@@ -8,7 +8,7 @@
 #
 # `logo` is a Font Awesome 7 class. Font Awesome has no GroupMe brand icon, so
 # these are generic solid icons chosen to read clearly at 1em.
-email: tulanemathsociety@gmail.com
+email: enaig@tulane.edu
 
 groupme:
   logo: fa-solid fa-comments

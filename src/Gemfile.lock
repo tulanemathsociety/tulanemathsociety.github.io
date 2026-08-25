@@ -111,7 +111,8 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    execjs (2.10.1)
+    execjs (2.10.2)
+      json (>= 2)
     fast-stemmer (1.0.2)
     feedjira (4.0.2)
       logger (>= 1.0, < 2)
@@ -128,25 +129,25 @@ GEM
     forwardable (1.4.0)
     forwardable-extended (2.6.0)
     gemoji (4.1.0)
-    google-protobuf (4.35.1)
+    google-protobuf (4.36.0)
       bigdecimal
       rake (~> 13.3)
-    google-protobuf (4.35.1-aarch64-linux-gnu)
+    google-protobuf (4.36.0-aarch64-linux-gnu)
       bigdecimal
       rake (~> 13.3)
-    google-protobuf (4.35.1-aarch64-linux-musl)
+    google-protobuf (4.36.0-aarch64-linux-musl)
       bigdecimal
       rake (~> 13.3)
-    google-protobuf (4.35.1-arm64-darwin)
+    google-protobuf (4.36.0-arm64-darwin)
       bigdecimal
       rake (~> 13.3)
-    google-protobuf (4.35.1-x86_64-darwin)
+    google-protobuf (4.36.0-x86_64-darwin)
       bigdecimal
       rake (~> 13.3)
-    google-protobuf (4.35.1-x86_64-linux-gnu)
+    google-protobuf (4.36.0-x86_64-linux-gnu)
       bigdecimal
       rake (~> 13.3)
-    google-protobuf (4.35.1-x86_64-linux-musl)
+    google-protobuf (4.36.0-x86_64-linux-musl)
       bigdecimal
       rake (~> 13.3)
     html-pipeline (2.14.3)
@@ -286,21 +287,21 @@ GEM
     rexml (3.4.4)
     rouge (4.7.0)
     safe_yaml (1.0.5)
-    sass-embedded (1.102.0-aarch64-linux-gnu)
+    sass-embedded (1.103.1-aarch64-linux-gnu)
       google-protobuf (~> 4.31)
-    sass-embedded (1.102.0-aarch64-linux-musl)
+    sass-embedded (1.103.1-aarch64-linux-musl)
       google-protobuf (~> 4.31)
-    sass-embedded (1.102.0-arm-linux-gnueabihf)
+    sass-embedded (1.103.1-arm-linux-gnueabihf)
       google-protobuf (~> 4.31)
-    sass-embedded (1.102.0-arm-linux-musleabihf)
+    sass-embedded (1.103.1-arm-linux-musleabihf)
       google-protobuf (~> 4.31)
-    sass-embedded (1.102.0-arm64-darwin)
+    sass-embedded (1.103.1-arm64-darwin)
       google-protobuf (~> 4.31)
-    sass-embedded (1.102.0-x86_64-darwin)
+    sass-embedded (1.103.1-x86_64-darwin)
       google-protobuf (~> 4.31)
-    sass-embedded (1.102.0-x86_64-linux-gnu)
+    sass-embedded (1.103.1-x86_64-linux-gnu)
       google-protobuf (~> 4.31)
-    sass-embedded (1.102.0-x86_64-linux-musl)
+    sass-embedded (1.103.1-x86_64-linux-musl)
       google-protobuf (~> 4.31)
     sax-machine (1.3.2)
     securerandom (0.4.1)
@@ -386,7 +387,7 @@ CHECKSUMS
   base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
   bibtex-ruby (6.2.0) sha256=d610eba78d6adf503a843daf144644449fb34e7c3f4a75e9ab67fae5dfd7c69a
   bigdecimal (4.1.2) sha256=53d217666027eab4280346fba98e7d5b66baaae1b9c3c1c0ffe89d48188a3fbd
-  bundler (4.0.18) sha256=02d9a17429de1847b4e0c9f27a9ee4b20c0a74c0a641b4e77195d6019e3618ac
+  bundler (4.0.19) sha256=b48056e4c77fb3853cc47775b5447ede44aaa4f53c32f168014ab4fe86587d47
   citeproc (1.1.0) sha256=278e6b8948133e82bef1c8204a1f88ca7adaa8744b9a283fe73e8f4cd0b53b95
   citeproc-ruby (2.1.8) sha256=192ce6525235adaa60d1dbc3f1b10b0839e86d98a94278736b807e234b3572e9
   classifier-reborn (2.3.0) sha256=e2236322de42b9c8d45d88a951cb0d76e210afa3bb8658b7b5802e2df41ef61c
@@ -404,7 +405,7 @@ CHECKSUMS
   drb (2.2.3) sha256=0b00d6fdb50995fe4a45dea13663493c841112e4068656854646f418fda13373
   em-websocket (0.5.3) sha256=f56a92bde4e6cb879256d58ee31f124181f68f8887bd14d53d5d9a292758c6a8
   eventmachine (1.2.7) sha256=994016e42aa041477ba9cff45cbe50de2047f25dd418eba003e84f0d16560972
-  execjs (2.10.1) sha256=abe0ae028467eb8e30c10814eb934d07876a691aae7e803d813b7ce5a75e73f1
+  execjs (2.10.2) sha256=466cf2b49e50c0cfdff8fdb88a7a983dfab7ac0f6185c317ccb434a75c224c88
   fast-stemmer (1.0.2) sha256=d0aa9fd9cfbca836a09d8abb122552ac8234130271a3b0da1cb077323d650819
   feedjira (4.0.2) sha256=3e7a90d24fd66eddc809539e637a86a02de1a7e038cd40157e916ed2f3b5ff71
   ffi (1.17.4-aarch64-linux-gnu) sha256=b208f06f91ffd8f5e1193da3cae3d2ccfc27fc36fba577baf698d26d91c080df
@@ -418,13 +419,13 @@ CHECKSUMS
   forwardable (1.4.0) sha256=f1cd40cc9812937980e1c76f1aa053660990a7c9b6a98fc37d945468afcce838
   forwardable-extended (2.6.0) sha256=1bec948c469bbddfadeb3bd90eb8c85f6e627a412a3e852acfd7eaedbac3ec97
   gemoji (4.1.0) sha256=734434020cbe964ea9d19086798797a47d23a170892de0ce55b74aa65d2ddc1a
-  google-protobuf (4.35.1) sha256=a3a6471331d918f58dfa4d014a8f6286f0af2cf4840216bde52fcf2ea3fe3726
-  google-protobuf (4.35.1-aarch64-linux-gnu) sha256=50ca44d0eeff3f8475e630a1accdd974256f3510694d574e2c9d6119ea8bc9e1
-  google-protobuf (4.35.1-aarch64-linux-musl) sha256=d5c65cef6bd6498a9e5ed5f88cf6cf7e341c10b0a005e32137d5d1a2b6e8c18a
-  google-protobuf (4.35.1-arm64-darwin) sha256=d9c957df04fa89c749fa9a72a7b383eb4296efc9b2303dc6fd6fbe39c698ad6b
-  google-protobuf (4.35.1-x86_64-darwin) sha256=66b62b4df00931018a692806df66393efa960d6d2b7da69735187249f950d3ee
-  google-protobuf (4.35.1-x86_64-linux-gnu) sha256=c786439087512a3fbd199e9897d265b855f951d4027e218ea55e858d45969edd
-  google-protobuf (4.35.1-x86_64-linux-musl) sha256=91890eb0002934a339fdb7d77a147c46b7474b6799db27872b747b905837f744
+  google-protobuf (4.36.0) sha256=2132fb002366b85a57fbb796333e2cb1f969126e05f9af32149709ba3fd397b5
+  google-protobuf (4.36.0-aarch64-linux-gnu) sha256=3fa22004853b83297d8ad4ca5c9adc8aea5e6da7b4caadf5577cb9da3eefe63f
+  google-protobuf (4.36.0-aarch64-linux-musl) sha256=6392f5e7cc5366203349f268c98e39f29c2ef9766ebbdb434819d7edb085a12c
+  google-protobuf (4.36.0-arm64-darwin) sha256=be182aac1cf55ccbbd27ec5a94d5b012069075f5c879d65423d33e6b2dec86f5
+  google-protobuf (4.36.0-x86_64-darwin) sha256=6cb938760546ee5ce57d04ed358ea10d0278b6f1ddea35e100c278f429afc25b
+  google-protobuf (4.36.0-x86_64-linux-gnu) sha256=8c253f7cb7647cdf1f54fc3f215e151206b5159e03d74fe29b8599264903de2b
+  google-protobuf (4.36.0-x86_64-linux-musl) sha256=d6c510ff9743b3dcde6acdea06512e4e4ecf53246e5c5b689879861e05d4738a
   html-pipeline (2.14.3) sha256=8a1d4d7128b2141913387cac0f8ba898bb6812557001acc0c2b46910f59413a0
   htmlcompressor (0.4.0) sha256=4630cf8ed46b563f0b49cc6028a3fe8c17a9067f2becd7c3a2aa5aaacefb1f9e
   http_parser.rb (0.8.1) sha256=9ae8df145b39aa5398b2f90090d651c67bd8e2ebfe4507c966579f641e11097a
@@ -485,14 +486,14 @@ CHECKSUMS
   rexml (3.4.4) sha256=19e0a2c3425dfbf2d4fc1189747bdb2f849b6c5e74180401b15734bc97b5d142
   rouge (4.7.0) sha256=dba5896715c0325c362e895460a6d350803dbf6427454f49a47500f3193ea739
   safe_yaml (1.0.5) sha256=a6ac2d64b7eb027bdeeca1851fe7e7af0d668e133e8a88066a0c6f7087d9f848
-  sass-embedded (1.102.0-aarch64-linux-gnu) sha256=087f377fa4135a8f67f5f422781b59815e99b8fd3aec335935c50a47c2a205fd
-  sass-embedded (1.102.0-aarch64-linux-musl) sha256=12bb4091972499241c35304ca11ca2c314764badf1b9933a8d437ba62432b538
-  sass-embedded (1.102.0-arm-linux-gnueabihf) sha256=566b1188e4f923366f494a5d95e4e5e03864ae55bae5ea52beb2c30b1b9e2915
-  sass-embedded (1.102.0-arm-linux-musleabihf) sha256=1ca396610bf4f4aa8f849b67a9f2720f67d9f3b42651072eafee786aece314cf
-  sass-embedded (1.102.0-arm64-darwin) sha256=8e18b2dd94b232c2dd73984c579f77bbc1a066028f4675c8989ac34fa40d14dc
-  sass-embedded (1.102.0-x86_64-darwin) sha256=3e78c6ac5be0ba4236d075bd044a49d0f515d54799f7d6f253c71d325ffedac0
-  sass-embedded (1.102.0-x86_64-linux-gnu) sha256=9815b7604123a9a44a65d44d5e58e7af1c7005174b745cda83bad4c9e3760ab3
-  sass-embedded (1.102.0-x86_64-linux-musl) sha256=9e3c15eb5d83784adf3b946d4fc5d8a32aed25566a2fee939f25dd1e1d217ddf
+  sass-embedded (1.103.1-aarch64-linux-gnu) sha256=48790fb0be3c57177121f28626a7c5cfc258a06aa499f09fd80a55054cc46c09
+  sass-embedded (1.103.1-aarch64-linux-musl) sha256=fb0bfcbab2e7baf8e6a59890e2729037cd1651859718e7c7a5878d5f9e2a6e8c
+  sass-embedded (1.103.1-arm-linux-gnueabihf) sha256=1388f692fd7c76d3fe03fb8d79a45ca89586a1fa19a8718faf875f457bed4169
+  sass-embedded (1.103.1-arm-linux-musleabihf) sha256=9e2a3cf86576d96fd16ebd1fbd4333e72c3df6b1990e5273d5a3b4d2e1eec4ac
+  sass-embedded (1.103.1-arm64-darwin) sha256=b4afa0515a8bdb9949675bc85a3625b676bd11080b4d5b5134282729762a2261
+  sass-embedded (1.103.1-x86_64-darwin) sha256=75514c8f62a849e5e2e98fe89268176278fb0900751208a7ae3322451a0b5285
+  sass-embedded (1.103.1-x86_64-linux-gnu) sha256=1056cb8031fbceee992a3d07c39e9118864aa280e1ba03d85bc5397bd4479333
+  sass-embedded (1.103.1-x86_64-linux-musl) sha256=2f52d9f70030a2d8ddbff8289049df1d38f20f55ba05a87a0049d99fbaa1108c
   sax-machine (1.3.2) sha256=a1112678039eea4c402827ca0d377744e0f882fd6386f29f7b0023d938750d3a
   securerandom (0.4.1) sha256=cc5193d414a4341b6e225f0cb4446aceca8e50d5e1888743fac16987638ea0b1
   set (1.1.3) sha256=12bbbd31c8b177d55ac0314bcc7f4c473276b06e8a2dcfdc14326e73ce7769ce
@@ -507,4 +508,4 @@ CHECKSUMS
   webrick (1.9.2) sha256=beb4a15fc474defed24a3bda4ffd88a490d517c9e4e6118c3edce59e45864131
 
 BUNDLED WITH
-  4.0.18
+  4.0.19

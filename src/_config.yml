@@ -128,13 +128,13 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Weekly Puzzle # blog_name will be displayed in your blog page
-blog_description: Problems, hints, and solutions from the Tulane Math Club weekly puzzle series.
+blog_name: Weekly Problem Set # blog_name will be displayed in your blog page
+blog_description:
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
-# The seeded puzzles carry the release dates from the old site (late Aug / Sep 2026),
+# The seeded problem sets carry the release dates from the old site (late Aug / Sep 2026),
 # which are still in the future. Without this Jekyll silently skips them.
-# Once the puzzles are re-dated to real release dates, set this back to false.
+# Once the problem sets are re-dated to real release dates, set this back to false.
 future: true
 
 # Pagination
@@ -188,6 +188,10 @@ newsletter:
 
 collections:
   news:
+    defaults:
+      layout: post
+    output: true
+  events:
     defaults:
       layout: post
     output: true
@@ -314,8 +318,8 @@ jekyll-archives:
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
 
-display_tags: ["combinatorics", "number-theory", "analysis"] # these tags will be displayed on the front page of your blog
-display_categories: ["weekly-puzzle"] # these categories will be displayed on the front page of your blog
+display_tags: ["combinatorics", "analysis", "putnam"] # these tags will be displayed on the front page of your blog
+display_categories: ["weekly-problem-set"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

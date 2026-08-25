@@ -1,9 +1,9 @@
 ---
 layout: post
-date: 2026-08-09
+date: 2026-08-24
 inline: true
 related_posts: false
 ---
 
-First meeting of the year: **Sunday, August 23**. Time and location to be announced through the
-[GroupMe](https://groupme.com/join_group/96206392/6syQhgSf).
+Our first meeting is **Tuesday, September 1** at 5:00 p.m.
+[Details, room, and map]({{ '/events/first-meeting-september-1/' | relative_url }}).
