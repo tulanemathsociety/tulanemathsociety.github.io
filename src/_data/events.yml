@@ -8,12 +8,16 @@
 #   time:        optional. Omit the key entirely if unknown; do not write "TBD".
 #   location:    optional. Same.
 #   description: optional. Markdown is supported.
+#   details:     optional. Internal path to a full write-up (map, room, etc).
 #   rsvp:        optional. Adds a "Details and RSVP" link.
 #
 # An event with no time or location renders a "Time and location to be announced"
 # note on its own, so there is nothing to remember to clean up later.
 
 - title: First Meeting
-  date: 2026-08-23
-  description: First meeting of the year. Everyone welcome.
+  date: 2026-09-01
+  time: 5:00 PM
+  location: Norman Mayer Memorial Hall (room to be announced)
+  description: Everyone welcome.
+  details: /events/first-meeting-september-1/
   rsvp: https://tulane.campuslabs.com/engage/organization/mathclub

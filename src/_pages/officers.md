@@ -16,4 +16,4 @@ nav_order: 4
 | Faculty Advisor | Daniel Irving Bernstein | <a href="mailto:dbernstein1@tulane.edu">dbernstein1@tulane.edu</a> |
 
 General club mail goes to
-<a href="mailto:tulanemathsociety@gmail.com">tulanemathsociety@gmail.com</a>.
+<a href="mailto:enaig@tulane.edu">enaig@tulane.edu</a>.

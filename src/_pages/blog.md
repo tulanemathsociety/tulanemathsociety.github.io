@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /blog/
-title: Puzzle
+title: Problem Sets
 nav: true
 nav_order: 1
 pagination:
