@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First meeting: Tuesday, September 1, 5 p.m., Norman Mayer Memorial Hall"
+title: "First meeting: Tuesday, September 1, 5 p.m., Norman Mayer MA-101"
 date: 2026-08-24
 related_posts: false
 permalink: /events/first-meeting-september-1/
@@ -8,15 +8,14 @@ permalink: /events/first-meeting-september-1/
 
 Our first meeting of the year is **Tuesday, September 1, at 5:00 p.m.**
 
-The location is tentatively **Norman Mayer Memorial Hall** on the uptown campus. The room number
-is still being sorted out and we will post it here as soon as we have it.
+The room is **Norman Mayer Building, room MA-101 (G)**.
 
 [Problem Set 1]({{ '/blog/' | relative_url }}) goes out at this meeting.
 
 ## Where it is
 
 <iframe
-  title="Map of Norman Mayer Memorial Hall, Tulane University uptown campus"
+  title="Map of the Norman Mayer Building, Tulane University uptown campus"
   width="100%"
   height="380"
   loading="lazy"
