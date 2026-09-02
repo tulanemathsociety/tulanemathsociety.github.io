@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Problem Set 1"
-date: 2026-09-01
+date: 2026-09-08
 description: "Week 1. Five problems on colorings, invariants, and pigeonholes, with two from the Putnam."
 tags: combinatorics analysis putnam
 categories: weekly-problem-set
 related_posts: false
 ---
 
-**Handed out:** September 1, 2026. **Due:** Tuesday, September 8.
+**Handed out:** September 8, 2026. **Due:** Tuesday, September 15.
 
 Write your solutions up in LaTeX and email the PDF to
 <a href="mailto:enaig@tulane.edu">enaig@tulane.edu</a>.
@@ -16,7 +16,7 @@ Write your solutions up in LaTeX and email the PDF to
 Here is the LaTeX template: **[problem-set-1.tex]({{ '/assets/tex/problem-set-1.tex' | relative_url }})**.
 
 Nobody is expected to get all five. These are low stakes: if you solve one, your name goes on
-this site, and we would love to have you walk the room through it at the September 8 meeting.
+this site, and we would love to have you walk the room through it at the September 15 meeting.
 
 ## Problem 1
 
@@ -51,4 +51,4 @@ an acute triangle.
 
 ## Solutions
 
-Posted after September 8.
+Posted after September 15.

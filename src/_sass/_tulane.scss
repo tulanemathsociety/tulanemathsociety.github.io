@@ -176,7 +176,7 @@ html[data-theme="dark"] blockquote {
 
 /* Same problem one level down: Tailwind's base sets h1 to a flat 2.5rem, and
    .post-title is the h1 on every page and post layout. Titles here are full
-   sentences ("First meeting: Tuesday, September 1, 5 p.m., Norman Mayer
+   sentences ("First meeting: Tuesday, September 8, 5 p.m., Norman Mayer
    MA-101"), so at 40px they run five lines on a phone and push the body text
    off the first screen. The clamp is unchanged at 571px and wider. */
 .post-title {

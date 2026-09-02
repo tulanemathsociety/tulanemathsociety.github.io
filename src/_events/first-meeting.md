@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "First meeting: Tuesday, September 1, 5 p.m., Norman Mayer MA-101"
+title: "First meeting: Tuesday, September 8, 5 p.m., Norman Mayer MA-101"
 date: 2026-08-24
 related_posts: false
-permalink: /events/first-meeting-september-1/
+permalink: /events/first-meeting/
 ---
 
-Our first meeting of the year is **Tuesday, September 1, at 5:00 p.m.**
+Our first meeting of the year is **Tuesday, September 8, at 5:00 p.m.**
 
 The room is **Norman Mayer Building, room MA-101 (G)**.
 

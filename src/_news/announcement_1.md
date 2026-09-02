@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Our first meeting is **Tuesday, September 1** at 5:00 p.m. in **Norman Mayer MA-101**.
-[Details and map]({{ '/events/first-meeting-september-1/' | relative_url }}).
+Our first meeting is **Tuesday, September 8** at 5:00 p.m. in **Norman Mayer MA-101**.
+[Details and map]({{ '/events/first-meeting/' | relative_url }}).
