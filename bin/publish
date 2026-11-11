@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+#
+# Build the Jekyll site in src/ and copy the result to the repository root.
+#
+# GitHub Pages for this repo is set to "Deploy from a branch: main / (root)",
+# and that setting can only be changed by the account that owns the repo. So the
+# root of main has to literally BE the built site. The source lives in src/ so
+# that generated files at the root can never collide with it.
+#
+# Usage: bin/publish
+#
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+ROOT="$PWD"
+
+# Anything at the root that is NOT generated output. Everything else at the root
+# is fair game to be replaced by a build.
+KEEP=(.git .github .gitattributes .gitignore LICENSE README.md src bin _site node_modules .claude .jekyll-cache)
+
+# jekyll-cache-bust resolves asset paths against the working directory, not the
+# configured source, so the build has to run from inside src/.
+echo "==> Building"
+(cd src && bundle exec jekyll build -d "$ROOT/_site")
+
+# Must happen before the copy: purgecss rewrites the CSS in _site, so running it
+# afterwards would leave the root serving the unpurged stylesheet.
+if command -v purgecss >/dev/null 2>&1; then
+  echo "==> Purging unused CSS"
+  purgecss -c src/purgecss.config.js
+else
+  echo "==> Skipping purgecss (not installed); CSS will be larger but correct"
+fi
+
+echo "==> Removing previously generated files from the root"
+for entry in * .[!.]*; do
+  [ -e "$entry" ] || continue
+  skip=false
+  for k in "${KEEP[@]}"; do
+    [ "$entry" = "$k" ] && skip=true && break
+  done
+  $skip || rm -rf -- "$entry"
+done
+
+echo "==> Copying build output to the root"
+# The /. suffix copies the contents of _site, including dotfiles like .nojekyll.
+cp -R _site/. "$ROOT/"
+
+echo "==> Done. Root now serves:"
+ls -A | grep -vE '^(\.git|\.github|src|bin|_site|node_modules|\.claude|\.jekyll-cache)$' | tr '\n' ' '
+echo

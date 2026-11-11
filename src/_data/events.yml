@@ -1,0 +1,47 @@
+# Club events. This is the only file you edit to change the events page.
+#
+# Add a new event by appending a block. Order does not matter; the page sorts by
+# date and splits upcoming from past automatically using the build date.
+#
+#   title:       required
+#   date:        required, YYYY-MM-DD. The weekday is derived, so don't write it.
+#   time:        optional. Omit the key entirely if unknown; do not write "TBD".
+#   location:    optional. Same.
+#   description: optional. Markdown is supported.
+#   details:     optional. Internal path to a full write-up (map, room, etc).
+#   rsvp:        optional. Adds a "Details and RSVP" link.
+#
+# An event with no time or location renders a "Time and location to be announced"
+# note on its own, so there is nothing to remember to clean up later.
+
+- title: First Meeting
+  date: 2026-09-08
+  time: 5:00 PM
+  location: Norman Mayer Building, room MA-101 (G)
+  description: Everyone welcome.
+  details: /events/first-meeting/
+  rsvp: https://tulane.campuslabs.com/engage/organization/mathclub
+
+- title: "No regular meeting: attend the math colloquium instead"
+  date: 2026-10-08
+  time: 3:30 PM
+  location: Norman Mayer Building, room 200B
+  description: >-
+    Instead of meeting on our own this week, we are going to the department
+    colloquium together. Alexander Heaton (Lawrence University) speaks on
+    *When Is a Framework Rigid? From Graphs to Linear Algebra*. The abstract
+    says no background in rigidity theory is assumed, so this one should be
+    very accessible to undergrads. The talk runs 3:30 to 4:30, followed by a
+    reception with food from 4:30 to 5:00.
+    [Abstract](https://sse.tulane.edu/math/colloquium/fall-2026).
+
+- title: "No regular meeting: attend the Fauci and Moll reception instead"
+  date: 2026-11-12
+  time: 4:00 PM
+  location: Paul Hall Courtyard
+  description: >-
+    Instead of our usual meeting this week, we are going to the reception
+    celebrating Lisa Fauci and Victor Moll's 40 years at Tulane. The reception
+    runs 4:00 to 6:00 PM. It kicks off a day-long conference in their honor on
+    Friday, November 13.
+    [Conference details](https://sse.tulane.edu/math/fauci-moll).

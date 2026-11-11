@@ -1,0 +1,12 @@
+{
+  "name": "tulane-math-club-site",
+  "private": true,
+  "scripts": {
+    "lint:prettier": "prettier . --check",
+    "format": "prettier . --write"
+  },
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.10.0",
+    "prettier": "^3.8.0"
+  }
+}
