@@ -1,12 +1,8 @@
 name: Deploy site
 
-# GitHub Pages for this repo is set to "Deploy from a branch: main / (root)",
-# and only the account that owns the repo can change that. So this workflow does
-# not push to gh-pages. It builds the Jekyll site in src/ and commits the result
-# to the root of main, which is what Pages actually serves.
-#
-# If Pages is ever repointed at a gh-pages branch, replace the commit step with
-# JamesIves/github-pages-deploy-action and move src/* back to the root.
+# Builds the Jekyll site in src/ and deploys it with GitHub Pages' Actions
+# source (Settings, Pages, Source: "GitHub Actions"). Nothing is committed back
+# to the repository; the built site only exists as a Pages artifact.
 
 on:
   push:
@@ -18,20 +14,20 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
-  group: publish-main
+  group: pages
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    # Skip the run triggered by this workflow's own publish commit.
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
@@ -41,7 +37,7 @@ jobs:
           working-directory: src
 
       - name: Setup Node 🧰
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "20"
           cache: "npm"
@@ -51,23 +47,28 @@ jobs:
         run: npm ci
         working-directory: src
 
-      - name: Build and stage the site 🔧
+      - name: Build the site 🔧
         env:
           JEKYLL_ENV: production
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
           npm install -g purgecss
-          bin/publish
+          bin/build
 
-      - name: Commit the built site to main 🚀
+      - name: Upload Pages artifact 📦
         if: github.event_name != 'pull_request'
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if git diff --cached --quiet; then
-            echo "No changes to publish."
-            exit 0
-          fi
-          git commit -m "Publish site [skip ci]"
-          git push
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages 🚀
+        id: deployment
+        uses: actions/deploy-pages@v5

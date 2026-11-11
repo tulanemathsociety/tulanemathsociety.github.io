@@ -7,9 +7,9 @@ The official website of the Tulane Math Club.
 Built with [Jekyll](https://jekyllrb.com/) and the
 [al-folio](https://github.com/alshedivat/al-folio) theme (v1.1), deployed to GitHub Pages.
 
-> **Repository layout:** the Jekyll source lives in `src/`. Everything else at the repository
-> root is *generated* and is overwritten on every deploy. Never edit files at the root by hand.
-> See [Deployment](#deployment) for why it is arranged this way.
+> **Repository layout:** the Jekyll source lives in `src/`. The repository root holds only
+> tooling (`bin/`, `.github/`) and docs. The built site is never committed; see
+> [Deployment](#deployment).
 
 ## Editing content
 
@@ -51,31 +51,20 @@ docker compose pull && docker compose up   # http://localhost:8080
 
 ## Deployment
 
-GitHub Pages for this repo is set to **Deploy from a branch: `main` / (root)**, and only the
-account that owns the repository can change that setting. So the root of `main` has to literally
-be the built site.
+GitHub Pages for this repo is set to **Source: GitHub Actions** (Settings, Pages). Only the
+account that owns the repository can change that setting.
 
-That is why the source sits in `src/`: it keeps generated files at the root from colliding with
-source files of the same name. `.nojekyll` at the root tells GitHub to serve those files as-is
-rather than trying to build them, which it cannot do, since al-folio ships its layouts as gems
-that GitHub's Pages builder does not have.
+On every push to `main`, `.github/workflows/deploy.yml` runs `bin/build`, which builds `src/`
+into `_site/` and purges unused CSS, then uploads `_site/` as a Pages artifact and deploys it.
+Nothing is committed back to the repository. Pull requests run the build only, as a check.
 
-`.github/workflows/deploy.yml` runs `bin/publish` on every push to `main` and commits the result
-back to `main` with `[skip ci]` so it does not retrigger itself.
+To deploy without a code change, use Actions, Deploy site, Run workflow.
 
-To publish by hand:
+To check a production build locally:
 
 ```bash
-bin/publish
-git add -A && git commit -m "Publish site" && git push
+bin/build   # output in _site/
 ```
-
-### Preferred setup, if someone gets owner access
-
-Pointing Pages at a `gh-pages` branch is cleaner, and keeps generated files out of `main`
-entirely. To switch: set Settings, Pages, Source to `gh-pages`, move `src/*` back to the root,
-delete the generated files, and change the last workflow step back to
-`JamesIves/github-pages-deploy-action` with `folder: _site`.
 
 ## Theme overrides
 

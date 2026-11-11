@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#
+# Build the Jekyll site in src/ into _site/ at the repository root.
+#
+# The deploy workflow runs this and uploads _site/ to GitHub Pages. Nothing is
+# copied into the repository itself. Run it locally to check a production build.
+#
+# Usage: bin/build
+#
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+ROOT="$PWD"
+
+# jekyll-cache-bust resolves asset paths against the working directory, not the
+# configured source, so the build has to run from inside src/.
+echo "==> Building"
+(cd src && bundle exec jekyll build -d "$ROOT/_site")
+
+# purgecss.config.js uses paths relative to the repository root (_site/...).
+if command -v purgecss >/dev/null 2>&1; then
+  echo "==> Purging unused CSS"
+  purgecss -c src/purgecss.config.js
+else
+  echo "==> Skipping purgecss (not installed); CSS will be larger but correct"
+fi
+
+echo "==> Done. Built site is in _site/"
